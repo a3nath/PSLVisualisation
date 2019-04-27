@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[269]:
-
 
 import os
 import numpy as np
@@ -15,14 +13,10 @@ from scipy import stats
 from IPython.display import display
 
 
-# In[270]:
-
-
 psldata = pd.ExcelFile(r'/Users/Amar/Documents/Learning & Development/Projects/PSL/_data/All deliveries.xlsx')
 df = pd.read_excel(psldata)
 
 
-# In[271]:
 
 
 ##cleaning data
@@ -30,20 +24,14 @@ df = pd.read_excel(psldata)
 df.iloc[:,-2:] = df.iloc[:,-2:].fillna('No dismisal')
 
 
-# In[272]:
 
 
 #Renamed team names
 df = df.replace(to_replace = ['Peshawar Zalmi', 'Islamabad United', 'Quetta Gladiators', 'Karachi Kings', 'Lahore Qalandars'], value = ['Pesh', 'Isl', 'Qta', 'Khi', 'Lhr'])
 
 
-# In[610]:
-
 
 df['Batting_team'].value_counts()
-
-
-# In[274]:
 
 
 def wick(x):
@@ -53,8 +41,6 @@ def wick(x):
         return 0
 df['wicket'] = df['Dismisal_kind'].apply(lambda x: wick(x))
 
-
-# In[275]:
 
 
 def isSix(x):
@@ -72,15 +58,11 @@ df['Six'] = df['Batsman_runs'].map(lambda x: isSix(x))
 df['Four'] = df['Batsman_runs'].map(lambda x: isFour(x))
 
 
-# In[276]:
-
 
 #Ball-by-ball detail for each batsman
 
 df_bat = pd.merge(df.groupby(['Batsman_strike','Match_id']).sum().reset_index()[['Batsman_strike','Match_id','Batsman_runs']], df.groupby(['Batsman_strike', 'Match_id']).count().reset_index()[['Batsman_strike','Match_id', 'Ball']].rename(columns = {'Ball': 'Balls_played'}), on = ['Batsman_strike', 'Match_id'])
 
-
-# In[286]:
 
 
 #Team Name
@@ -89,16 +71,8 @@ df_bat = pd.merge(df.groupby(['Batsman_strike','Match_id']).sum().reset_index()[
 df_batAvg = pd.merge(pd.merge(df_bat.groupby('Batsman_strike').mean().reset_index()[['Batsman_strike','Batsman_runs', 'Balls_played']].rename(columns = {'Batsman_runs' : 'AvgRuns_match' , 'Balls_played': 'AvgBalls_match'}), df[['Batsman_strike', 'Batting_team']].drop_duplicates(keep = 'first'), on = 'Batsman_strike') , pd.merge(df.groupby(['Batsman_strike']).sum().reset_index()[['Batsman_strike', 'Batsman_runs', 'Six', 'Four']].rename(columns = {'Batsman_runs': 'TotalRuns', 'Six':'TotalSixes', 'Four':'TotalFours'}), df.groupby(['Batsman_strike']).count().reset_index()[['Batsman_strike' , 'Ball']].rename(columns = {'Ball': 'Balls_played'}), on ='Batsman_strike'), on = 'Batsman_strike')
                                                                                                                                      
                                                                                                                                      
-
-
-# In[287]:
-
-
 df_batAvg['Runs_sq'] = 0
 df_batAvg['Matches_played'] = 0
-
-
-# In[288]:
 
 
 for i in range(len(df_batAvg)):
@@ -108,17 +82,11 @@ for i in range(len(df_batAvg)):
             df_batAvg['Matches_played'].iloc[i] += 1
 
 
-# In[289]:
-
-
 #Strke rate, % boundary and Variance
 df_batAvg['Strike_rate'] = df_batAvg['TotalRuns'] * 100 /df_batAvg['Balls_played']
 df_batAvg['PercentageRuns_boundary'] = (df_batAvg['TotalSixes']* 6 + df_batAvg['TotalFours'] * 4) * 100/df_batAvg['TotalRuns']
 df_batAvg["Var"] = (df_batAvg['Runs_sq'] - df_batAvg['Matches_played']*(df_batAvg['AvgRuns_match']**2))/(df_batAvg['Matches_played'] - 1)
 df_batAvg = df_batAvg.sort_values(by = 'TotalRuns', ascending = False)
-
-
-# In[299]:
 
 
 z = df_batAvg['Batsman_strike']
@@ -129,25 +97,16 @@ layout = go.Layout(paper_bgcolor = 'white',plot_bgcolor = 'white' , yaxis = dict
 fig = go.Figure(data = data, layout = layout)
 plotly.offline.init_notebook_mode(connected=True)
 plotly.offline.iplot(fig)
-# figon = py.plot(fig)
-
-
-
-# In[ ]:
 
 
 df_batAvg['Var'] = df_batAvg['Var'].fillna(0)
 df_bowler['Var'] = df_bowler['Var'].fillna(0)
 
 
-# In[668]:
 
 
-# data = []
 team_list = list(df_batAvg['Batting_team'].unique())
-# for team in team_list:
-#     trace = go.Histogram(x= df_batAvg.loc[df_batAvg['Batting_team'] == team, 'AvgRuns_match'], opacity = 0.75)
-#     data.append(trace)
+
 trace0 = go.Histogram(x= df_batAvg.loc[df_batAvg['Batting_team'] == team_list[0], 'AvgRuns_match'], opacity = 0.75, name = team_list[0])
 trace1 = go.Histogram(x= df_batAvg.loc[df_batAvg['Batting_team'] == team_list[1], 'AvgRuns_match'], opacity = 0.75, name = team_list[1])
 trace2 = go.Histogram(x= df_batAvg.loc[df_batAvg['Batting_team'] == team_list[2], 'AvgRuns_match'], opacity = 0.75, name = team_list[2])
@@ -165,10 +124,6 @@ fig4.layout.title = dict(text = 'Distribution of average batsman scores for each
 fig4.layout.xaxis = dict(tickmode = 'linear', dtick = 10)
 
 plotly.offline.iplot(fig4)
-
-
-# In[302]:
-
 
 def runlevel(x):
     if x >= 1.25*df_batAvg['AvgRuns_match'].mean():
@@ -195,16 +150,9 @@ def varlevel(x):
         return 'Average'
     
 
-
-# In[303]:
-
-
 df_batAvg['Runs_level'] = df_batAvg['AvgRuns_match'].map(lambda x: runlevel(x))
 df_batAvg['Strike_level'] = df_batAvg['Strike_rate'].map(lambda x: strikelevel(x))
 df_batAvg['Var_level'] = df_batAvg['Var'].map(lambda x: varlevel(x))
-
-
-# In[307]:
 
 
 dfteam = df.groupby(['Batting_team','Bowling_team', 'Match_id', 'Innings', 'Over']).sum().reset_index()
@@ -224,9 +172,6 @@ for i in range(len(dfteam)):
 
 
 dfteam['Total_runs'] = pd.Series(Total_runs)
-
-
-# In[484]:
 
 
 team_list = wg.Dropdown(options = list(df['Batting_team'].unique()))
@@ -270,13 +215,8 @@ def response(team):
     plotly.offline.iplot(fig11)
 
 
-# In[485]:
-
-
 wg.interact(response, team=team_list)
 
-
-# In[555]:
 
 
 team_list1 = wg.Dropdown(options = list(df['Batting_team'].unique()), description = "Team1 Name")
@@ -342,18 +282,9 @@ def head_head(team1,team2):
     plotly.offline.iplot(fig12)
 
 
-     
-    
-
-
-# In[556]:
-
+   
 
 wg.interact(head_head, team1 = team_list1, team2 = team_list2)
-
-
-# In[557]:
-
 
 def caught(x):
     if x == 'caught':
@@ -386,10 +317,6 @@ def candb(x):
     else:
         return 0
 
-
-# In[558]:
-
-
 df['Caught'] = df['Dismisal_kind'].apply(lambda x: caught(x))
 df['Bowled'] = df['Dismisal_kind'].apply(lambda x: bowled(x))
 df['Lbw'] = df['Dismisal_kind'].apply(lambda x: lbw(x))
@@ -398,15 +325,9 @@ df['Stump'] = df['Dismisal_kind'].apply(lambda x: stump(x))
 df['Caught_bowled'] = df['Dismisal_kind'].apply(lambda x: candb(x))
 
 
-# In[362]:
-
-
 df_bowl = pd.merge(df.groupby(['Bowler', 'Match_id']).sum().reset_index().filter(regex = "[Innings,Over,Ball]"), df.groupby(['Bowler', 'Match_id']).count().reset_index()[['Bowler','Match_id', 'Ball']].rename(columns = {'Ball': 'TotalDeliveries'}), on = ['Bowler', 'Match_id'])
 
 df_bowlAvg = pd.merge(df.groupby(['Bowler', 'Match_id']).sum().reset_index().filter(regex = "[^Match_id,Innings,Over,Ball]") ,  df.groupby(['Bowler', 'Match_id']).count().reset_index()[['Bowler', 'Ball']].rename(columns = {'Ball': 'Delieveries_bowled'}), on = 'Bowler').groupby('Bowler').mean().reset_index()
-
-
-# In[363]:
 
 
 df_bowl_Avg_merge = pd.merge(df_bowl.groupby('Bowler').sum().reset_index().filter(regex = '[^Match_id,Innings,Over,Ball]'), df_bowlAvg.filter(regex = "[^Caught,Bowled,Stump,Caught_bowled, Lbw, Runout]").rename(columns = {'Delieveries_bowled':'AvgDeliveries_bowled','Batsman_runs': 'AvgBatsman_runs', 'Extra_runs': 'AvgExtra_runs' , 'Six': 'AvgSix', 'Four': 'AvgFour', 'wicket' : 'AvgWicket'}),
@@ -418,10 +339,6 @@ dfecon['Economy'] = dfecon['Batsman_runs'] + dfecon['Extra_runs']
 
 
 df_bowler = pd.merge(df_bowl_Avg_merge, dfecon[['Bowler','Economy']], on = 'Bowler')
-
-
-# In[364]:
-
 
 df_bowler['Runs_sq'] = 0
 df_bowler['Matches_played'] = 0
@@ -435,17 +352,8 @@ for i in range(len(df_bowler)):
 df_bowler['Var'] = (df_bowler['Runs_sq'] - (df_bowler['Matches_played']*((df_bowler['AvgBatsman_runs']+df_bowler['AvgExtra_runs'])**2)))/(df_bowler['Matches_played'] -1)
 
  
-
-
-# In[365]:
-
-
 df_bowler = pd.merge(df_bowler, df[['Bowler', 'Bowling_team']].drop_duplicates(keep = 'first'), on = 'Bowler')
 df_bowler.dropna(inplace = True)
-
-
-# In[366]:
-
 
 trace1 = go.Scatter(x = df_bowler['wicket'], y = df_bowler['Batsman_runs']+df_bowler['Extra_runs'], mode = 'markers', hoverinfo = 'text' , text = df_bowler['Bowler'], marker = dict(size = 25, symbol = 'circle' , cmin = 0, autocolorscale = True, reversescale = True, colorbar = {'title' : {'text': 'Bowler Economy'}}, color = df_bowler['Economy']))
 
@@ -460,14 +368,9 @@ plotly.offline.init_notebook_mode(connected=True)
 plotly.offline.iplot(fig22)
 
 
-# In[565]:
 
-
-# data = []
 team_list = list(df_bowler['Bowling_team'].unique())
-# for team in team_list:
-#     trace = go.Histogram(x= df_batAvg.loc[df_batAvg['Batting_team'] == team, 'AvgRuns_match'], opacity = 0.75)
-#     data.append(trace)
+
 trace0 = go.Histogram(x= df_bowler.loc[df_bowler['Bowling_team'] == team_list[0], 'Economy'], opacity = 0.75, name = team_list[0])
 trace1 = go.Histogram(x= df_bowler.loc[df_bowler['Bowling_team'] == team_list[1], 'Economy'], opacity = 0.75, name = team_list[1])
 trace2 = go.Histogram(x= df_bowler.loc[df_bowler['Bowling_team'] == team_list[2], 'Economy'], opacity = 0.75, name = team_list[2])
@@ -486,21 +389,10 @@ fig4.layout.title = dict(text = "Distribution of average bowler economy for each
 plotly.offline.iplot(fig4)
 
 
-# In[ ]:
-
-
 df_batAvg[['Batsman_strike', 'Batting_team','AvgRuns_match', 'Strike_rate', 'Var']].rename(columns = {'Batsman_strike': 'Player', 'Batting_team': 'Team', 'Var': 'Batsman_var'})
 
 
-# In[638]:
-
-
-
 dfscore = df_batAvg[['Batsman_strike', 'Batting_team','AvgRuns_match', 'Strike_rate', 'Var']].rename(columns = {'Batsman_strike': 'Player', 'Batting_team':'Team','Var': 'Bat_var'}).merge(df_bowler[['Bowler', 'Economy', 'AvgWicket','AvgDeliveries_bowled', 'Var', 'Bowling_team']].rename(columns = {'Bowler':'Player','Var':'Bowl_var','Bowling_team':'Team'}), on = ['Player','Team'], how = 'outer').fillna(value = 0)                                                                                                          
-
-
-# In[639]:
-
 
 f = 'Strike_rate'
 g = 'AvgRuns_match'
@@ -588,15 +480,7 @@ for i in range(len(dfscore)):
     else:
         dfscore['BowlVarRank'].iloc[i] = 2
 
-
-# In[640]:
-
-
 dfscore['PlayerScore'] = dfscore['AvgRuns_matchRank'] + dfscore['Strike_rateRank'] + dfscore['AvgWicketRank'] + dfscore['BatVarRank'] + dfscore['BowlVarRank'] + dfscore['EconomyRank']
-
-
-# In[641]:
-
 
 def mvprank(x):
     if x >= np.quantile(dfscore['PlayerScore'], 0.90):
@@ -615,32 +499,6 @@ dfscore.loc[dfscore['PlayerRank']==3, 'MVP'] = 'VP'
 dfscore.loc[dfscore['PlayerRank'] <3, 'MVP'] = 'Below Average'
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[669]:
-
 
 trace0 = go.Box(y = dfscore.loc[dfscore['Team'] == 'Pesh', 'PlayerScore'], name = 'Pesh', boxmean = 'sd', boxpoints = 'all')
 trace1 = go.Box(y = dfscore.loc[dfscore['Team'] == 'Isl', 'PlayerScore'], name = 'Isl', boxmean = 'sd', boxpoints = 'all')
@@ -655,8 +513,6 @@ fig111 = go.Figure(data = data)
 plotly.offline.iplot(fig111)
 
 
-# In[685]:
-
 
 #Boxplot Story
 # Even though Lhr has a greater median than other teams and a much greater 3rd quantile, it has a few number of total players.
@@ -664,13 +520,9 @@ plotly.offline.iplot(fig111)
 
 
 
-# In[673]:
-
 
 dfscore.loc[dfscore['PlayerScore'] >= 7, 'Team'].value_counts()
 
-
-# In[684]:
 
 
 dfscore.sort_values(by = 'PlayerScore', ascending = False).head(20).Team.value_counts()
