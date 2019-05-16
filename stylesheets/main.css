@@ -1,0 +1,129 @@
+/*Main style sheet */
+
+/* image containers */
+
+.row {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+
+}
+
+.column {
+    float: left;
+    width: 20%
+
+}
+
+/*clears float after image containers */
+
+/* row::after  {
+    
+  content: "";
+  clear: both;
+  display: table; */
+
+}
+
+
+#top {
+    border-bottom: dashed 1px black;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+
+h1 {text-align: center;
+    font-size: 32px;
+    color: #2B416C;
+}
+
+
+h3 {text-align: center;
+    color: #2B416C;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2B416C;
+}
+
+body {
+    font-family: "National 2 Web";
+    font-size: 24px;
+    background-color: #D8EEF6;
+    font-weight: normal;
+}
+
+.container {
+    
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 10px;
+    
+    padding-left: 40px;
+    padding-right: 40px;  
+}
+
+
+
+.text {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.graph {
+    padding: 10px;
+}
+
+
+
+
+#bottom {
+    
+    border-top: dashed 1px black;
+}
+
+table { border: solid 2px white; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: solid 2px white;
+}
+
+th { 
+    color: #2B416C;
+text-align: center;
+border-bottom: solid 2px white;
+    background-color: #2B416C;
+    color: aliceblue;
+     font-size: 16px;
+    font-weight: normal;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    border-bottom: solid 2px white;
+    font-size: 16px;
+        font-weight: normal;
+}
+
+tr:nth-child(even) {
+    background-color: ;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:hover {
+    background-color: lightslategrey;
+    color: white;
+}
