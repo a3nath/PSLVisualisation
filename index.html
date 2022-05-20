@@ -1,440 +1,355 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        
-        <title> PSL2017 - A Visual Journey  </title>
-        <meta name="viewport" content="width= device-width, initial-scale=1.0">
-         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <link rel = "stylesheet" href = "stylesheets/main.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <!-- google fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Roboto">
-
-    
-        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <!-- stylesheet  -->
+        <link rel="stylesheet" href ="stylesheets/style.css">
+        <title> PSL2017 - A Visual Journey  </title>
     </head>
-    
     <body>
-        
         <main>           
-            <header>
+            <header class="header" id="home">
                 <h1> Pakistan Super League 2017 Visulisation </h1>
                 <h3>   A cricket tournament analysis </h3>
-                <img class = "cricgif" src="img/cricgif.gif" alt= "cricket gif" align="middle"> 
+                <!-- <img class = "cricgif" src="img/cricgif.gif" alt= "cricket gif" align="middle">  -->
                     
             </header>
-
-                <br>
-             <div class = "container">
-                 
-                
-                <section id='Home' tabindex="0">
-                    <div class = 'text'>
-                    <p> Pakistan Super League (PSL) is a cricket league, operated by the Pakistan Cricket Board, played mostly in the Middle East.
-                    </p>
-                    <p> It is the shortest format of the game in which each team has 20 overs (120  balls) to score as many runs as possible hence commonly referred to as T20.
-                    </p>
-                    <p> The 2017 PSL was played amongst 5 teams
-                    </p>
+            <section class='intro-text' id='Home' tabindex="0">
+                <div class = "intro-container container">
+                    <div class = 'cricket-text text'>
+                        <p> 
+                            <a href='https://en.wikipedia.org/wiki/Pakistan_Super_League' blank='_'>Pakistan Super League (PSL) is a </a> 
+                            <a href='https://en.wikipedia.org/wiki/Cricket'>cricket </a>
+                            league, operated by the Pakistan Cricket Board, played mostly in the Middle East.
+                        </p>
+                        <p> It is a sport played between two teams in which each team gets 20 overs (120  balls) to score as many runs as possible. The team which scores the most at the end of 20 overs wins.</p>
                     </div>
-                </section>
-                <!-- Team logos -->
-
-                    <figure id = 'logo-row' tabindex="1">
-                        
-                        
-                        <figure class="logo">
-                            <a href = "https://www.peshawarzalmi.com" target=  "_blank"> <img src = "img/Peshawar_Zalmi_logo.svg" width = "150", height = "150" alt = "Peshawar Zalmi logo"><figcaption>Peshawar Zalmi</figcaption> </a>
-                        </figure>
-
-                        <figure class="logo">
-                            <a href = "https://www.quettagladiators.com"  target="_blank"><img src = "img/Quetta_Gladiators_logo.svg" width = "150", height = "150" alt = "Quetta Gladiators logo"> <figcaption>Quetta Gladiators</figcaption> </a> 
-                        </figure> 
-
-                        <figure class="logo">
-                            <a href = "https://www.islamabadunited.com" target="_blank"><img src = "img/Islamabad_United_logo.svg" width = "150", height = "150" alt = "Islamabad United logo"> <figcaption>Islamabad United</figcaption></a>
-                        </figure>
-
-                        <figure class="logo"> 
-                            <a href = "https://www.lahoreqalandars.com/" target="_blank"> <img src = "img/Lahore_Qalandars_logo.svg" width = "150", height = "150" alt = "Lahore Qalandars logo"> <figcaption>Lahore Qalandars</figcaption> </a>
-                        </figure> 
-
-                        <figure class="logo"> 
-                            <a href = "https://www.lahoreqalandars.com/" target="_blank"> <img src = "img/Karachi_Kings_logo.svg" width = "150", height = "150" alt = "Karachi Kings logo"><figcaption> Karachi Kings</figcaption></a>
-                        </figure> 
-                        
-                    </figure>
-             
-                
-    
-                <div class = 'text'>
-                    <p>
-                        I studied how each teams players perfomed in the tournament.
-                        I broke down the performance in Batting and Bowling and assigned a score based on their batting and bowling performance.
-                        So natually, all-rounders who bat and bowl were ranked higher.
-                    </p> 
+                    <div class = 'analysis-intro text'>
+                        <p>
+                            I studied how each teams players perfomed in the tournament.
+                            I broke down the performance in Batting and Bowling and assigned a score based on their batting and bowling performance.
+                            So natually, all-rounders who bat and bowl were ranked higher.
+                        </p> 
+                        <div class="team-text text">
+                            <p> The 2017 edition of PSL was played amongst 5 teams
+                            </p>
+                            <!-- Team logos -->
+                            <ul class = 'team-logo-container' tabindex="1">
+                                <li class='team-logo'>
+                                    <a href = "https://www.peshawarzalmi.com" target=  "_blank"> <img src = "img/Peshawar_Zalmi_logo.svg" width = "150", height = "150" alt = "Peshawar Zalmi logo"><figcaption>Peshawar Zalmi</figcaption> </a>
+                                </li>
+                                <li class='team-logo'>
+                                    <a href = "https://www.quettagladiators.com"  target="_blank"><img src = "img/Quetta_Gladiators_logo.svg" width = "150", height = "150" alt = "Quetta Gladiators logo"> <figcaption>Quetta Gladiators</figcaption> </a> 
+                                </li>
+                                <li class='team-logo'>
+                                    <a href = "https://www.islamabadunited.com" target="_blank"><img src = "img/Islamabad_United_logo.svg" width = "150", height = "150" alt = "Islamabad United logo"> <figcaption>Islamabad United</figcaption></a>
+                                </li>
+                                <li class='team-logo'>
+                                    <a href = "https://www.lahoreqalandars.com/" target="_blank"> <img src = "img/Lahore_Qalandars_logo.svg" width = "150", height = "150" alt = "Lahore Qalandars logo"> <figcaption>Lahore Qalandars</figcaption> </a>
+                                </li>
+                                <li class='team-logo'>
+                                    <a href = "https://www.lahoreqalandars.com/" target="_blank"> <img src = "img/Karachi_Kings_logo.svg" width = "150", height = "150" alt = "Karachi Kings logo"><figcaption> Karachi Kings</figcaption></a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            
-                 <br>
-                 <br>
-          
-             <div id="Batting" >
-            
-                <section id="BattingPerformance" tabindex="2">
-
-                    <div class =  "text">   
+            </section>
+            <section class="batting-performance" tabindex="2">
+                <div class="batting-container container">
+                    <div class= "text">   
                         <h2> Batting Performance </h2>
                         <p> In T20, batting is pretty straighforward and  unlike bowling, almost every player has a batting stat.
                         </p>
-
-
-               
                         <p> To start, I compared individual batting peformances using the follwing 3 metrics: </p>
-
-
                         <ol>
                             <li><span class = 'colortext'><strong>Average runs:</strong></span> Average runs scored in each game</li>
                             <li><span class='colortext'><strong>Strike rate:</strong></span> Runs scored per 100 balls</li>
                             <li><span class='colortext'><strong> Score variance:</strong></span> Batsman's scoring consistency </li>
                         </ol>
-
                     <p> In the plot below, as we scroll left to right the average runs increases, bottom to top strike rate increases. The darker circle color represents more consistency.
                     <br>Hover over a point and you can view the player name and team name.</p>
-                 </div>
-
+                </div>
                 <figure class = graph>
-
-                    <div><div id="4694105a-9af0-4ecd-9c40-de3021284973" style="height: 100%; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("4694105a-9af0-4ecd-9c40-de3021284973", [{"hoverinfo": "text", "marker": {"autocolorscale": true, "cmin": 0, "color": [1343.890909090909, 387.87777777777774, 579.2777777777778, 632.125, 1249.6190476190475, 705.0277777777778, 315.3888888888889, 336.62222222222226, 267.0000000000001, 349.00000000000006, 437.26785714285717, 393.55357142857144, 390.16666666666663, 425.29999999999995, 163.25, 504.85714285714283, 259.4444444444444, 310.7857142857143, 561.25, 411.9, 528.0277777777778, 928.2666666666667, 1021.3, 289.61904761904754, 150.99999999999997, 134.76666666666665, 73.95238095238092, 605.6999999999999, 151.2380952380952, 63.410714285714285, 240.33333333333334, 189.2, 145.2857142857143, 209.06666666666666, 1012.5, 243.6, 76.79999999999998, 173.66666666666666, 339.6666666666667, 14.333333333333258, 170.33333333333331, 224.33333333333331, 170.0, 14.333333333333314, 91.69999999999999, 2.0, 43.0, 48.333333333333336, 312.5, 65.33333333333331, null, 18.0, 18.800000000000004, 220.5, 75.33333333333333, 180.5, 7.0, 18.666666666666668, 61.0, null, null, null, 4.5, 2.0, null, null, 0.0, 0.3333333333333333, 0.5, null, null, null, null, null, null, null, 0.5, null, null, null], "colorbar": {"title": {"text": "Score variance"}}, "reversescale": true, "size": 20, "symbol": "circle"}, "mode": "markers", "showlegend": false, "text": ["Kamran Akmal  Peshawar Zalmi", "Babar Azam  Karachi Kings", "DR Smith  Islamabad United", "RR Rossouw  Quetta Gladiators", "KP Pietersen  Quetta Gladiators", "Ahmed Shehzad  Quetta Gladiators", "KC Sangakkara  Karachi Kings", "Shoaib Malik  Karachi Kings", "KA Pollard  Karachi Kings", "Sarfraz Ahmed  Quetta Gladiators", "Fakhar Zaman  Lahore Qalandars", "Shahid Afridi  Peshawar Zalmi", "DJ Malan  Peshawar Zalmi", "JJ Roy  Lahore Qalandars", "SR Watson  Islamabad United", "Umar Akmal  Lahore Qalandars", "CH Gayle  Karachi Kings", "Misbah-ul-Haq  Islamabad United", "Mohammad Hafeez  Peshawar Zalmi", "Asad Shafiq  Quetta Gladiators", "BJ Haddin  Islamabad United", "EJG Morgan  Peshawar Zalmi", "SW Billings  Islamabad United", "Mohammad Rizwan  Lahore Qalandars", "DJG Sammy  Peshawar Zalmi", "RS Bopara  Karachi Kings", "SP Narine  Lahore Qalandars", "Tamim Iqbal  Peshawar Zalmi", "BB McCullum  Lahore Qalandars", "Imad Wasim  Karachi Kings", "CS Delport  Lahore Qalandars", "MN Samuels  Peshawar Zalmi", "GD Elliott  Lahore Qalandars", "Sohail Tanvir  Lahore Qalandars", "Hussain Talat  Islamabad United", "Shadab Khan  Islamabad United", "Anwar Ali  Quetta Gladiators", "Shakib Al Hasan  Peshawar Zalmi", "Asif Ali  Islamabad United", "Rafatullah Mohmand  Islamabad United", "NLTC Perera  Quetta Gladiators", "Mahmudullah  Quetta Gladiators", "Sohaib Maqsood  Peshawar Zalmi", "Haris Sohail  Peshawar Zalmi", "Wahab Riaz  Peshawar Zalmi", "BM Duckett  Islamabad United", "Hasan Khan  Quetta Gladiators", "CJ Jordan  Peshawar Zalmi", "Aamer Yamin  Lahore Qalandars", "Amad Butt  Islamabad United", "SM Ervine  Quetta Gladiators", "Mohammad Amir  Karachi Kings", "Hasan Ali  Peshawar Zalmi", "Yasir Shah  Lahore Qalandars", "Mohammad Nawaz (3)  Quetta Gladiators", "Shahzaib Hasan  Karachi Kings", "Saad Nasim  Quetta Gladiators", "Sohail Khan  Karachi Kings", "Iftikhar Ahmed  Peshawar Zalmi", "LJ Wright  Quetta Gladiators", "DPMD Jayawardene  Karachi Kings", "RR Emrit  Quetta Gladiators", "Usama Mir  Karachi Kings", "Mohammad Irfan (4)  Lahore Qalandars", "Anamul Haque  Quetta Gladiators", "Umar Gul  Quetta Gladiators", "Bilawal Bhatti  Lahore Qalandars", "Mohammad Sami  Islamabad United", "TS Mills  Quetta Gladiators", "N Pooran  Islamabad United", "Ghulam Mudassar  Lahore Qalandars", "Sharjeel Khan  Islamabad United", "Imran Khalid  Islamabad United", "Junaid Khan  Peshawar Zalmi", "Khushdil Shah  Peshawar Zalmi", "MN van Wyk  Quetta Gladiators", "Zulfiqar Babar  Quetta Gladiators", "Usman Khan  Karachi Kings", "Rumman Raees  Islamabad United", "Mohammad Irfan  Islamabad United"], "x": [32.09090909090909, 29.1, 30.444444444444443, 31.875, 34.42857142857143, 26.444444444444443, 21.5, 20.2, 22.333333333333332, 20.333333333333332, 22.125, 22.125, 29.166666666666668, 34.6, 19.0, 20.5, 17.77777777777778, 19.75, 17.0, 24.5, 15.444444444444445, 22.666666666666668, 26.6, 18.571428571428573, 13.333333333333334, 11.9, 16.571428571428573, 18.8, 13.285714285714286, 10.375, 20.5, 16.2, 10.571428571428571, 11.333333333333334, 33.5, 11.0, 11.4, 13.5, 11.5, 15.333333333333334, 13.333333333333334, 12.333333333333334, 7.0, 10.333333333333334, 6.2, 15.0, 6.5, 6.5, 12.5, 8.333333333333334, 24.0, 6.0, 4.6, 11.5, 5.0, 9.5, 6.0, 4.0, 5.0, 12.0, 10.0, 6.0, 2.5, 1.0, 3.0, 2.0, 1.0, 0.5, 0.5, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.5, 0.0, 0.0, 0.0], "y": [128.83211678832117, 109.81132075471699, 110.93117408906883, 121.42857142857143, 148.76543209876544, 127.95698924731182, 114.36170212765957, 120.23809523809524, 162.09677419354838, 128.8732394366197, 136.15384615384616, 163.88888888888889, 129.62962962962962, 149.13793103448276, 132.5581395348837, 124.24242424242425, 108.84353741496598, 108.21917808219177, 96.83544303797468, 106.52173913043478, 118.80341880341881, 101.49253731343283, 134.34343434343435, 120.37037037037037, 127.65957446808511, 94.44444444444444, 170.58823529411765, 106.81818181818181, 116.25, 129.6875, 146.42857142857142, 120.8955223880597, 92.5, 103.03030303030303, 131.37254901960785, 157.14285714285714, 129.54545454545453, 110.20408163265306, 102.22222222222223, 124.32432432432432, 111.11111111111111, 137.03703703703704, 92.10526315789474, 67.3913043478261, 79.48717948717949, 88.23529411764706, 96.29629629629629, 86.66666666666667, 96.15384615384616, 96.15384615384616, 126.3157894736842, 114.28571428571429, 153.33333333333334, 100.0, 105.26315789473684, 111.76470588235294, 105.88235294117646, 114.28571428571429, 57.69230769230769, 171.42857142857142, 125.0, 66.66666666666667, 125.0, 66.66666666666667, 33.333333333333336, 66.66666666666667, 28.571428571428573, 50.0, 50.0, 33.333333333333336, 100.0, 25.0, 100.0, 50.0, 16.666666666666668, 14.285714285714286, 33.333333333333336, 0.0, 0.0, 0.0], "type": "scatter", "uid": "ae86f93d-1b74-4fb6-ab61-22bf6ea22618"}], {"paper_bgcolor": "white", "plot_bgcolor": "white", "title": {"text": "All batsman\'s performance - Average runs, Strike rate, Score variance"}, "xaxis": {"showgrid": false, "title": {"text": "Average runs"}, "zeroline": false}, "yaxis": {"color": "black", "showgrid": true, "title": {"font": {"color": "black"}, "text": "Strike rate"}, "zeroline": false}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})</script><script type="text/javascript">window.addEventListener("resize", function(){Plotly.Plots.resize(document.getElementById("4694105a-9af0-4ecd-9c40-de3021284973"));});</script></div>
-
-                </figure>
-
-                <div class = "text">
-
-                <p>
-                        There are some key takeaways from the visual, for example we can observe that Kamran Akmal, with one of the highest averge and strike rate is very inconsitent. So, in a crucial game he might not perform well.
-                </p>
-
-                </div>
-
-
-                    <!-- Batsman Histogram -->
-
-            <div class = "text">
-
-                    <p> Next, I compared the distribution of average batsman runs between teams. 
-                    For each team, you can observe the number of batsman in each range.
-                    </p>
-
-
-
-            </div>
-
-            <figure class = 'graph'>
-
-                    <div><div id="d837ab1e-bcb6-4201-aa4c-f85421464ed7" style="height: 100%; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("d837ab1e-bcb6-4201-aa4c-f85421464ed7", [{"name": "Peshawar Zalmi", "opacity": 0.75, "x": [32.09090909090909, 22.125, 29.166666666666668, 17.0, 22.666666666666668, 13.333333333333334, 18.8, 16.2, 13.5, 7.0, 10.333333333333334, 6.2, 6.5, 4.6, 5.0, 1.0, 1.0], "type": "histogram", "uid": "6826d055-0367-42a2-b51b-deeebb3b6c00", "xaxis": "x", "yaxis": "y"}, {"name": "Karachi Kings", "opacity": 0.75, "x": [29.1, 21.5, 20.2, 22.333333333333332, 17.77777777777778, 11.9, 10.375, 6.0, 9.5, 4.0, 10.0, 2.5, 0.0], "type": "histogram", "uid": "1a38290e-55ee-496f-a3d6-083fc7a2f211", "xaxis": "x3", "yaxis": "y3"}, {"name": "Islamabad United", "opacity": 0.75, "x": [30.444444444444443, 19.0, 19.75, 15.444444444444445, 26.6, 33.5, 11.0, 11.5, 15.333333333333334, 15.0, 8.333333333333334, 0.5, 1.0, 1.0, 1.0, 0.0, 0.0], "type": "histogram", "uid": "a1ef71c7-35ad-4610-a4f3-3f8a5211f8a3", "xaxis": "x4", "yaxis": "y4"}, {"name": "Quetta Gladiators", "opacity": 0.75, "x": [31.875, 34.42857142857143, 26.444444444444443, 20.333333333333332, 24.5, 11.4, 13.333333333333334, 12.333333333333334, 6.5, 24.0, 5.0, 6.0, 12.0, 6.0, 3.0, 2.0, 0.5, 1.0, 0.5], "type": "histogram", "uid": "b8abf21e-b95f-4a04-8c1e-be3ba12176de", "xaxis": "x5", "yaxis": "y5"}, {"name": "Lahore Qalandars", "opacity": 0.75, "x": [22.125, 34.6, 20.5, 18.571428571428573, 16.571428571428573, 13.285714285714286, 20.5, 10.571428571428571, 11.333333333333334, 12.5, 11.5, 1.0, 1.0, 1.0], "type": "histogram", "uid": "0f66cccc-8e19-4820-a8a8-ef40ba68e60f", "xaxis": "x6", "yaxis": "y6"}], {"xaxis": {"dtick": 10, "tickmode": "linear"}, "yaxis": {"anchor": "x", "domain": [0.7333333333333333, 1.0]}, "xaxis2": {"anchor": "y2", "domain": [0.55, 1.0]}, "yaxis2": {"anchor": "x2", "domain": [0.7333333333333333, 1.0]}, "xaxis3": {"anchor": "y3", "domain": [0.0, 0.45]}, "yaxis3": {"anchor": "x3", "domain": [0.36666666666666664, 0.6333333333333333]}, "xaxis4": {"anchor": "y4", "domain": [0.55, 1.0]}, "yaxis4": {"anchor": "x4", "domain": [0.36666666666666664, 0.6333333333333333]}, "xaxis5": {"anchor": "y5", "domain": [0.0, 0.45]}, "yaxis5": {"anchor": "x5", "domain": [0.0, 0.26666666666666666]}, "xaxis6": {"anchor": "y6", "domain": [0.55, 1.0]}, "yaxis6": {"anchor": "x6", "domain": [0.0, 0.26666666666666666]}, "title": {"text": "Distribution of average batsman scores"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})</script></div>
-
-                    </figure>
-
-                <div class = "text">
-                <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. </p>
-                </div>
-
-
-                </section>
-            
-          </div>
-                 
-
-
-                <!-- Bowling scatter chart -->
-                 
-        
-    <div id = "Bowling">
-        <section id = "BowlingPerformance" tabindex="2">
-
-           <div class = "text">
-
-                 <h2>Bowling Performance</h2> 
-
-               <p> A bowlers job is to stop batsman from scoring runs. They try to either get the batsman out or minimize the number of runs they concede. </p>
-
-
-               <p>  Similar to the batsman scatter chart, the bowler scatter chart compares the bowlers on 3 metrics: </p>
-
-               <ol>
-
-               <li><span class='colortext'><strong> Economy:</strong></span> Average runs conceded in an over</li>
-               <li><span class='colortext'><strong>Total Wickets
-                </strong></span> Total wickets taken</li>
-               <li><span class='colortext'><strong>Bowler Variance:</strong></span> Consistency in number of runs given </li>
-
-               </ol>
-
-
-             <p>   As we move along the axes, number of wickets increase on the xaxis and ecoonomy increases along the y axis. The darker circle color signifies more consistency. 
-               </p>
-            </div>
-
-            <figure class = "graph">
-
-                    <div><div id="97762b34-c213-40d5-ae8b-6ac7d22e0dc0" style="height: 100%; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("97762b34-c213-40d5-ae8b-6ac7d22e0dc0", [{"hoverinfo": "text", "marker": {"autocolorscale": true, "cmin": 0, "color": [100.33333333333348, 4.5, 65.33333333333343, 163.5, 63.19999999999982, 75.8666666666666, 65.9, 0.5, 41.61904761904767, 61.73333333333338, 122.62222222222226, 25.155555555555615, 34.333333333333485, 4.5, 26.800000000000068, 94.01111111111115, 89.23809523809511, 40.7, 73.07142857142857, 189.8095238095237, 163.3444444444443, 29.194444444444343, 212.1666666666668, 132.33333333333326, 16.285714285714146, 88.0, 184.5000000000001, 200.66666666666666, 57.42857142857143, 72.44444444444434, 45.583333333333336, 229.7999999999999, 30.19444444444457, 188.28571428571428, 93.30000000000018, 85.35714285714286, 82.98214285714286, 104.25000000000011, 70.98214285714286, 26.285714285714285], "colorbar": {"title": {"text": "Bowler Variance"}}, "reversescale": true, "size": 25, "symbol": "circle"}, "mode": "markers", "text": ["Aamer Yamin   Lahore Qalandars", "Abrar Ahmed   Karachi Kings", "Amad Butt   Islamabad United", "Anwar Ali   Quetta Gladiators", "Bilawal Bhatti   Lahore Qalandars", "CJ Jordan   Peshawar Zalmi", "DJG Sammy   Peshawar Zalmi", "Fakhar Zaman   Lahore Qalandars", "GD Elliott   Lahore Qalandars", "Hasan Ali   Peshawar Zalmi", "Hasan Khan   Quetta Gladiators", "Imad Wasim   Karachi Kings", "Imran Khalid   Islamabad United", "Junaid Khan   Peshawar Zalmi", "Mahmudullah   Quetta Gladiators", "Mohammad Amir   Karachi Kings", "Mohammad Asghar   Peshawar Zalmi", "Mohammad Hafeez   Peshawar Zalmi", "Mohammad Irfan   Islamabad United", "Mohammad Irfan (4)   Lahore Qalandars", "Mohammad Nawaz (3)   Quetta Gladiators", "Mohammad Sami   Islamabad United", "NLTC Perera   Quetta Gladiators", "RS Bopara   Karachi Kings", "Rumman Raees   Islamabad United", "SP Narine   Lahore Qalandars", "SR Watson   Islamabad United", "Saeed Ajmal   Islamabad United", "Shadab Khan   Islamabad United", "Shahid Afridi   Peshawar Zalmi", "Shakib Al Hasan   Peshawar Zalmi", "Shoaib Malik   Karachi Kings", "Sohail Khan   Karachi Kings", "Sohail Tanvir   Lahore Qalandars", "TS Mills   Quetta Gladiators", "Usama Mir   Karachi Kings", "Usman Khan   Karachi Kings", "Wahab Riaz   Peshawar Zalmi", "Yasir Shah   Lahore Qalandars", "Zulfiqar Babar   Quetta Gladiators"], "x": [5, 0, 1, 6, 1, 7, 2, 1, 5, 13, 9, 8, 1, 3, 7, 11, 8, 6, 8, 7, 13, 13, 6, 0, 13, 11, 12, 3, 9, 2, 5, 3, 16, 14, 9, 12, 9, 16, 10, 8], "y": [7.166666666666666, 6.833333333333333, 9.799999999999999, 9.4, 6.625, 6.8, 10.5, 2.5, 9.583333333333334, 6.972972972972973, 7.03030303030303, 6.689655172413794, 11.200000000000001, 12.625, 7.466666666666667, 7.648648648648649, 8.764705882352942, 6.6000000000000005, 7.533333333333333, 9.4, 8.090909090909092, 6.757575757575758, 8.722222222222221, 10.11111111111111, 5.857142857142858, 6.5, 9.130434782608697, 9.666666666666668, 6.923076923076923, 7.0, 6.583333333333333, 7.454545454545455, 7.65625, 8.666666666666666, 7.35, 8.214285714285715, 7.653846153846154, 6.363636363636363, 6.25, 6.625], "type": "scatter", "uid": "36ccfce6-6610-4360-b0dd-93cab9645732"}], {"hovermode": "closest", "paper_bgcolor": "white", "plot_bgcolor": "white", "title": {"text": "All Bowler\'s Performance - Economy, Total Wickets, Variance"}, "xaxis": {"showgrid": false, "title": {"text": "Total wickets"}, "zeroline": false}, "yaxis": {"color": "black", "showgrid": true, "title": {"font": {"color": "black"}, "text": "Economy"}, "zeroline": false}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})</script></div>
-
-            </figure>
-
-            <div class = "text">
-
-                <p> Peshawar and Islamabad seem to dominate with good, consistent bowlers that have low economy with high total wickets. Quetta and Lahore though dont appear to have many bowlers in the low economy and high wickets section. </p>
-
-            </div>
-
-                <!-- Bowling histogram -->
-
-            <div class = "text">
-
-                    <p> Like, the batsman average runs distribution, I compared bowlers economy distribution for across teams.
-
-                    <br>
-
-                    In T20, each bowler can bowl a maximum of 4 overs so each team needs atleast 5 bolwers. Often times teams employ more than 5 bowlers to rotate their bowling and rest players. Thus, a team with lots of bolwers with good ecnomy gives them plenty of options. 
-
-
-                    </p>
-
-            </div>
-
-            <figure class = "graph">
-
-                    <div><div id="c1ade35d-3dbb-46b5-8b59-292e2632ebb3" style="height: 100%; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("c1ade35d-3dbb-46b5-8b59-292e2632ebb3", [{"name": "Peshawar Zalmi", "opacity": 0.75, "x": [6.8, 10.5, 6.972972972972973, 12.625, 8.764705882352942, 6.6000000000000005, 7.0, 6.583333333333333, 6.363636363636363], "type": "histogram", "uid": "a4bdda15-67d2-4c1a-a35a-7eacd845ca16", "xaxis": "x", "yaxis": "y"}, {"name": "Karachi Kings", "opacity": 0.75, "x": [6.833333333333333, 6.689655172413794, 7.648648648648649, 10.11111111111111, 7.454545454545455, 7.65625, 8.214285714285715, 7.653846153846154], "type": "histogram", "uid": "7bc79f4f-5970-48e5-b58d-db9e784e3985", "xaxis": "x2", "yaxis": "y2"}, {"name": "Islamabad United", "opacity": 0.75, "x": [9.799999999999999, 11.200000000000001, 7.533333333333333, 6.757575757575758, 5.857142857142858, 9.130434782608697, 9.666666666666668, 6.923076923076923], "type": "histogram", "uid": "a688e756-3ca3-43cc-bb62-bf8f48f2cb31", "xaxis": "x3", "yaxis": "y3"}, {"name": "Quetta Gladiators", "opacity": 0.75, "x": [9.4, 7.03030303030303, 7.466666666666667, 8.090909090909092, 8.722222222222221, 7.35, 6.625], "type": "histogram", "uid": "ed2af85d-e14e-4e91-844f-0771d3f33aa3", "xaxis": "x4", "yaxis": "y4"}, {"name": "Lahore Qalandars", "opacity": 0.75, "x": [7.166666666666666, 6.625, 2.5, 9.583333333333334, 9.4, 6.5, 8.666666666666666, 6.25], "type": "histogram", "uid": "55b54810-50bb-4d5d-9463-2d56da408885", "xaxis": "x5", "yaxis": "y5"}], {"xaxis": {"anchor": "y", "domain": [0.0, 0.45]}, "yaxis": {"anchor": "x", "domain": [0.7333333333333333, 1.0]}, "xaxis2": {"anchor": "y2", "domain": [0.55, 1.0]}, "yaxis2": {"anchor": "x2", "domain": [0.7333333333333333, 1.0]}, "xaxis3": {"anchor": "y3", "domain": [0.0, 0.45]}, "yaxis3": {"anchor": "x3", "domain": [0.36666666666666664, 0.6333333333333333]}, "xaxis4": {"anchor": "y4", "domain": [0.55, 1.0]}, "yaxis4": {"anchor": "x4", "domain": [0.36666666666666664, 0.6333333333333333]}, "xaxis5": {"anchor": "y5", "domain": [0.0, 0.45]}, "yaxis5": {"anchor": "x5", "domain": [0.0, 0.26666666666666666]}, "xaxis6": {"anchor": "y6", "domain": [0.55, 1.0]}, "yaxis6": {"anchor": "x6", "domain": [0.0, 0.26666666666666666]}, "title": {"text": "Distribution of average bowler economy for each team"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})</script></div>   
-
-            </figure>
-
-            <div class = "text">
-                <p> 
-
-                Peshawar is a clear standout as it has 6 bowlers who give out less than 7 runs on average in an over.
-                Quetta can improve in the bowling department since they only have 1 bolwer with an average less than 7. 
-                </p>
-
-                </div>
-
-            </section>
-                     
-    </div>
-
-
-
-            <!-- Ranking -->
-        <div id = "Ranking">
-            <section id="PlayerScore" tabindex = "3">
-                <div class = "text">
-                    <h2> Overall</h2>
-
-                    <p>   
-                    I ranked all players and assigned each a score based  on the following performance metrics. Each metric is scored on a scale of 0 to 3.
-                    </p>
-
-                    <ol>
-
-                        <li><span class='colortext'><strong> Average runs scored</strong> </span> </li>
-                        <li><span class='colortext'><strong>Strike rate</strong></span></li>
-                        <li><span class='colortext'> <strong>Variance of batsman runs scored </strong></span></li>
-                        <li><span class='colortext'><strong> Average number of wickets taken</strong></span></li>
-                        <li><span class='colortext'><strong>Bowling Economy</strong></span></li>
-                        <li><span class='colortext'><strong>Variance of bowler runs conceded</strong> </span></li>
-
-
-                    </ol>
-                    <p>  The Player Score is calculated as the sum of all the metric scores. 
-                    <br> Naturally, all-rounders, who can bat as well as bowl, contribute most to a team and thus rank higher.  </p>
-
-                    <p> The table below displays the top 10 most valuable players based on the Player Score</p>
-                </div>
-            
-
-                <div class = "table">
-
-                <table>
-                    <thead>
-
-                        <tr>
-
-                            <th> Player</th>
-                            <th> Team</th>
-                            <th> Average Runs Rank</th>
-                            <th> Strike Rate Rank</th>
-                            <th> Runs Variance Rank</th>
-                            <th> Average Wickets Rank</th>
-                            <th> Average Economy Rank</th>
-                            <th> Runs conceded Variance Rank</th>
-                            <th> Player Score</th>
-
-                        </tr>
-
-                    </thead>  
-
-                    <tbody>
-
-                        <tr>     
-                            <td> Fakhar Zaman</td>
-                            <td> Lahore Qalandars </td>
-                            <td> 3</td>
-                            <td> 3</td>
-                            <td> 2</td>
-                            <td> 2</td>
-                            <td> 3</td>
-                            <td> 3</td>
-                            <td> 16</td>
-                        </tr>    
-                        <tr>     
-                            <td> Mahmudullah </td>
-                            <td> Quetta Gladiators </td>
-                            <td> 2</td>
-                            <td> 3</td>
-                            <td> 2</td>
-                            <td> 3</td>
-                            <td> 1</td>
-                            <td> 3</td>
-                            <td> 14</td>
-                        </tr>    <tr>     
-                            <td> SP Narine</td>
-                            <td> Lahore Qalandars </td>
-                            <td> 3</td>
-                            <td> 3</td>
-                            <td> 2</td>
-                            <td> 3</td>
-                            <td> 3</td>
-                            <td> 1</td>
-                            <td> 13</td>
-                        </tr>    
-                        <tr>     
-                            <td> SR Watson</td>
-                            <td> Islamabad United </td>
-                            <td> 3</td>
-                            <td> 3</td>
-                            <td> 2</td>
-                            <td> 3</td>
-                            <td> 1</td>
-                            <td> 1</td>
-                            <td> 13</td>
-                        </tr>    
-                        <tr>     
-                            <td> Imad Wasim</td>
-                            <td> Karachi Kings </td>
-                            <td> 2</td>
-                            <td> 3</td>
-                            <td> 0</td>
-                            <td> 3</td>
-                            <td> 1</td>
-                            <td> 3</td>
-                            <td> 12</td>
-                        </tr>    
-                        <tr>     
-                            <td> Mohammad Hafeez</td>
-                            <td> Peshawar Zalmi </td>
-                            <td> 3</td>
-                            <td> 2</td>
-                            <td> 1</td>
-                            <td> 3</td>
-                            <td> 1</td>
-                            <td> 2</td>
-                            <td> 12</td>
-                        </tr>    
-                        <tr>     
-                            <td> Shakib Al Hasan</td>
-                            <td> Peshawar Zalmi </td>
-                            <td> 2</td>
-                            <td> 2</td>
-                            <td> 2</td>
-                            <td> 3</td>
-                            <td> 1</td>
-                            <td> 2</td>
-                            <td> 12</td>
-                        </tr>    
-                        <tr>     
-                            <td> NLTC Perera</td>
-                            <td> Quetta Gladiators </td>
-                            <td> 2</td>
-                            <td> 2</td>
-                            <td> 2</td>
-                            <td> 3</td>
-                            <td> 1</td>
-                            <td> 1</td>
-                            <td> 11</td>
-                        </tr>    
-                        <tr>     
-                            <td> Shoaib Malik</td>
-                            <td> Karachi Kings </td>
-                            <td> 3</td>
-                            <td> 2</td>
-                            <td> 2</td>
-                            <td> 2</td>
-                            <td> 1</td>
-                            <td> 1</td>
-                            <td> 11</td>
-                        </tr>    
-                        <tr>     
-                            <td> Shahid Afridi</td>
-                            <td> Peshawar Zalmi </td>
-                            <td> 3</td>
-                            <td> 3</td>
-                            <td> 2</td>
-                            <td> 1</td>
-                            <td> 1</td>
-                            <td> 1</td>
-                            <td> 11</td>
-                        </tr>    
-
-                    </tbody>
-                </table>
-
-                </div>
-
-                <!-- Box plot for scores -->
-
-                <div class = "text">
-                    <p>
-                    To further comapre the distribution of player scores among teams, I plotted the box plots below.
-                    </p>
-
-
-                 </div>
-
-                <figure class = "graph">
-
-                    <div><div id="1cd394bf-3f0c-4280-908f-dacdad188964" style="height: 100%; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("1cd394bf-3f0c-4280-908f-dacdad188964", [{"boxmean": "sd", "boxpoints": "all", "name": "Peshawar Zalmi", "y": [7.0, 11.0, 8.0, 12.0, 6.0, 10.0, 6.0, 7.0, 12.0, 3.0, 3.0, 8.0, 8.0, 9.0, 2.0, 9.0, 2.0, 5.0], "type": "box", "uid": "819aebc2-7d55-48bd-bcb5-6a5dfd47390b"}, {"boxmean": "sd", "boxpoints": "all", "name": "Islamabad United", "y": [6.0, 13.0, 7.0, 5.0, 7.0, 7.0, 10.0, 4.0, 8.0, 7.0, 6.0, 9.0, 2.0, 2.0, 7.0, 7.0, 5.0, 5.0], "type": "box", "uid": "52099d65-23ed-4d41-a74f-a41dae8ac37b"}, {"boxmean": "sd", "boxpoints": "all", "name": "Quetta Gladiators", "y": [6.0, 7.0, 7.0, 8.0, 7.0, 10.0, 11.0, 14.0, 8.0, 9.0, 8.0, 3.0, 8.0, 2.0, 2.0, 2.0, 7.0, 2.0, 9.0], "type": "box", "uid": "22bff615-5584-45f7-a427-0a89c8f8b624"}, {"boxmean": "sd", "boxpoints": "all", "name": "Karachi Kings", "y": [7.0, 7.0, 11.0, 8.0, 7.0, 8.0, 12.0, 8.0, 4.0, 10.0, 5.0, 9.0, 5.0, 4.0], "type": "box", "uid": "a4b5f448-3260-4dab-a3d5-354490cc2632"}, {"boxmean": "sd", "boxpoints": "all", "name": "Lahore Qalandars", "y": [16.0, 8.0, 7.0, 7.0, 13.0, 6.0, 8.0, 10.0, 9.0, 11.0, 9.0, 7.0, 5.0, 3.0], "type": "box", "uid": "81806230-20e1-4cb0-8759-22d59851b805"}], {"title": {"text": "Player Score distribution for each team"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})</script></div>
-                </figure>
-
-                <div class = "text">
-                    <p> Box plot paints an interesting picture. Notice that Lahore has a highest median score and infact has the best player. But, the team only has 14 players. While Quetta has 19 players and 14 players with score greater than 7</p>
-                    <br>
-                    <p>
-                    Overall, Peshawar and Quetta seem to have the most balanced teams, both of whom were the tournament finalist. 
-                    Peshawar has good bowlers while Quetta has good batsman. 
-                    <br>
-                    Lahore Qalandars and Karachi Kings need to buy more players to match the other teams, specifically batsman.
-
-                    </p>
-                </div>
-            </section>
-        </div>
-                 
-            <div id = "Bottom">
-                <footer id = "Footer" tabindex="4">
-                <div class = 'text'>
-                <h2> Data and Methodology </h2>
-
-                    <p> I was inspired by <a href = "https://www.kaggle.com/ash316/let-s-play-cricket"> this Kaggle project </a> which is a similar analysis but with Indian Premier League data. 
-
-
-                    <br>    
-                        I used <a href= "https://cricsheet.org/" > ball-ball data </a> for 24 matches (48 innings) where each data point includes delivery number, bowler and batsman name and the outcome of the delivery. </p>
+                    <div>
+                        <div id="4694105a-9af0-4ecd-9c40-de3021284973" style="height: 100%; width: 100%;" class="plotly-graph-div"></div>
+                        <script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("4694105a-9af0-4ecd-9c40-de3021284973", [{"hoverinfo": "text", "marker": {"autocolorscale": true, "cmin": 0, "color": [1343.890909090909, 387.87777777777774, 579.2777777777778, 632.125, 1249.6190476190475, 705.0277777777778, 315.3888888888889, 336.62222222222226, 267.0000000000001, 349.00000000000006, 437.26785714285717, 393.55357142857144, 390.16666666666663, 425.29999999999995, 163.25, 504.85714285714283, 259.4444444444444, 310.7857142857143, 561.25, 411.9, 528.0277777777778, 928.2666666666667, 1021.3, 289.61904761904754, 150.99999999999997, 134.76666666666665, 73.95238095238092, 605.6999999999999, 151.2380952380952, 63.410714285714285, 240.33333333333334, 189.2, 145.2857142857143, 209.06666666666666, 1012.5, 243.6, 76.79999999999998, 173.66666666666666, 339.6666666666667, 14.333333333333258, 170.33333333333331, 224.33333333333331, 170.0, 14.333333333333314, 91.69999999999999, 2.0, 43.0, 48.333333333333336, 312.5, 65.33333333333331, null, 18.0, 18.800000000000004, 220.5, 75.33333333333333, 180.5, 7.0, 18.666666666666668, 61.0, null, null, null, 4.5, 2.0, null, null, 0.0, 0.3333333333333333, 0.5, null, null, null, null, null, null, null, 0.5, null, null, null], "colorbar": {"title": {"text": "Score variance"}}, "reversescale": true, "size": 20, "symbol": "circle"}, "mode": "markers", "showlegend": false, "text": ["Kamran Akmal  Peshawar Zalmi", "Babar Azam  Karachi Kings", "DR Smith  Islamabad United", "RR Rossouw  Quetta Gladiators", "KP Pietersen  Quetta Gladiators", "Ahmed Shehzad  Quetta Gladiators", "KC Sangakkara  Karachi Kings", "Shoaib Malik  Karachi Kings", "KA Pollard  Karachi Kings", "Sarfraz Ahmed  Quetta Gladiators", "Fakhar Zaman  Lahore Qalandars", "Shahid Afridi  Peshawar Zalmi", "DJ Malan  Peshawar Zalmi", "JJ Roy  Lahore Qalandars", "SR Watson  Islamabad United", "Umar Akmal  Lahore Qalandars", "CH Gayle  Karachi Kings", "Misbah-ul-Haq  Islamabad United", "Mohammad Hafeez  Peshawar Zalmi", "Asad Shafiq  Quetta Gladiators", "BJ Haddin  Islamabad United", "EJG Morgan  Peshawar Zalmi", "SW Billings  Islamabad United", "Mohammad Rizwan  Lahore Qalandars", "DJG Sammy  Peshawar Zalmi", "RS Bopara  Karachi Kings", "SP Narine  Lahore Qalandars", "Tamim Iqbal  Peshawar Zalmi", "BB McCullum  Lahore Qalandars", "Imad Wasim  Karachi Kings", "CS Delport  Lahore Qalandars", "MN Samuels  Peshawar Zalmi", "GD Elliott  Lahore Qalandars", "Sohail Tanvir  Lahore Qalandars", "Hussain Talat  Islamabad United", "Shadab Khan  Islamabad United", "Anwar Ali  Quetta Gladiators", "Shakib Al Hasan  Peshawar Zalmi", "Asif Ali  Islamabad United", "Rafatullah Mohmand  Islamabad United", "NLTC Perera  Quetta Gladiators", "Mahmudullah  Quetta Gladiators", "Sohaib Maqsood  Peshawar Zalmi", "Haris Sohail  Peshawar Zalmi", "Wahab Riaz  Peshawar Zalmi", "BM Duckett  Islamabad United", "Hasan Khan  Quetta Gladiators", "CJ Jordan  Peshawar Zalmi", "Aamer Yamin  Lahore Qalandars", "Amad Butt  Islamabad United", "SM Ervine  Quetta Gladiators", "Mohammad Amir  Karachi Kings", "Hasan Ali  Peshawar Zalmi", "Yasir Shah  Lahore Qalandars", "Mohammad Nawaz (3)  Quetta Gladiators", "Shahzaib Hasan  Karachi Kings", "Saad Nasim  Quetta Gladiators", "Sohail Khan  Karachi Kings", "Iftikhar Ahmed  Peshawar Zalmi", "LJ Wright  Quetta Gladiators", "DPMD Jayawardene  Karachi Kings", "RR Emrit  Quetta Gladiators", "Usama Mir  Karachi Kings", "Mohammad Irfan (4)  Lahore Qalandars", "Anamul Haque  Quetta Gladiators", "Umar Gul  Quetta Gladiators", "Bilawal Bhatti  Lahore Qalandars", "Mohammad Sami  Islamabad United", "TS Mills  Quetta Gladiators", "N Pooran  Islamabad United", "Ghulam Mudassar  Lahore Qalandars", "Sharjeel Khan  Islamabad United", "Imran Khalid  Islamabad United", "Junaid Khan  Peshawar Zalmi", "Khushdil Shah  Peshawar Zalmi", "MN van Wyk  Quetta Gladiators", "Zulfiqar Babar  Quetta Gladiators", "Usman Khan  Karachi Kings", "Rumman Raees  Islamabad United", "Mohammad Irfan  Islamabad United"], "x": [32.09090909090909, 29.1, 30.444444444444443, 31.875, 34.42857142857143, 26.444444444444443, 21.5, 20.2, 22.333333333333332, 20.333333333333332, 22.125, 22.125, 29.166666666666668, 34.6, 19.0, 20.5, 17.77777777777778, 19.75, 17.0, 24.5, 15.444444444444445, 22.666666666666668, 26.6, 18.571428571428573, 13.333333333333334, 11.9, 16.571428571428573, 18.8, 13.285714285714286, 10.375, 20.5, 16.2, 10.571428571428571, 11.333333333333334, 33.5, 11.0, 11.4, 13.5, 11.5, 15.333333333333334, 13.333333333333334, 12.333333333333334, 7.0, 10.333333333333334, 6.2, 15.0, 6.5, 6.5, 12.5, 8.333333333333334, 24.0, 6.0, 4.6, 11.5, 5.0, 9.5, 6.0, 4.0, 5.0, 12.0, 10.0, 6.0, 2.5, 1.0, 3.0, 2.0, 1.0, 0.5, 0.5, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.5, 0.0, 0.0, 0.0], "y": [128.83211678832117, 109.81132075471699, 110.93117408906883, 121.42857142857143, 148.76543209876544, 127.95698924731182, 114.36170212765957, 120.23809523809524, 162.09677419354838, 128.8732394366197, 136.15384615384616, 163.88888888888889, 129.62962962962962, 149.13793103448276, 132.5581395348837, 124.24242424242425, 108.84353741496598, 108.21917808219177, 96.83544303797468, 106.52173913043478, 118.80341880341881, 101.49253731343283, 134.34343434343435, 120.37037037037037, 127.65957446808511, 94.44444444444444, 170.58823529411765, 106.81818181818181, 116.25, 129.6875, 146.42857142857142, 120.8955223880597, 92.5, 103.03030303030303, 131.37254901960785, 157.14285714285714, 129.54545454545453, 110.20408163265306, 102.22222222222223, 124.32432432432432, 111.11111111111111, 137.03703703703704, 92.10526315789474, 67.3913043478261, 79.48717948717949, 88.23529411764706, 96.29629629629629, 86.66666666666667, 96.15384615384616, 96.15384615384616, 126.3157894736842, 114.28571428571429, 153.33333333333334, 100.0, 105.26315789473684, 111.76470588235294, 105.88235294117646, 114.28571428571429, 57.69230769230769, 171.42857142857142, 125.0, 66.66666666666667, 125.0, 66.66666666666667, 33.333333333333336, 66.66666666666667, 28.571428571428573, 50.0, 50.0, 33.333333333333336, 100.0, 25.0, 100.0, 50.0, 16.666666666666668, 14.285714285714286, 33.333333333333336, 0.0, 0.0, 0.0], "type": "scatter", "uid": "ae86f93d-1b74-4fb6-ab61-22bf6ea22618"}], {"paper_bgcolor": "white", "plot_bgcolor": "white", "title": {"text": "All batsman\'s performance - Average runs, Strike rate, Score variance"}, "xaxis": {"showgrid": false, "title": {"text": "Average runs"}, "zeroline": false}, "yaxis": {"color": "black", "showgrid": true, "title": {"font": {"color": "black"}, "text": "Strike rate"}, "zeroline": false}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})</script>
+                        <script type="text/javascript">window.addEventListener("resize", function(){Plotly.Plots.resize(document.getElementById("4694105a-9af0-4ecd-9c40-de3021284973"));});</script>
                     </div>
-                </footer>
-                 </div>
-
-
-            </div>
-
-        </main>
-
-    </body>
+                </figure>
+                <div class = "text graph-text bat-scat-text">
+                    <p>
+                        There are some key takeaways from the visual, for example we can observe that Kamran Akmal, with one of the highest averge and strike rate is very inconsitent. So, in a crucial game he might not perform well.
+                    </p>
+                </div>
+                    <!-- Batsman Histogram -->
+                <div class = "text">
+                        <p> Next, I compared the distribution of average batsman runs between teams. 
+                        For each team, you can observe the number of batsman in each range.
+                        </p>
+                </div>
+                <figure class='graph'>
+                <div>
+                    <div id="d837ab1e-bcb6-4201-aa4c-f85421464ed7" style="height: 100%; width: 100%;" class="plotly-graph-div"></div>
+                    <script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("d837ab1e-bcb6-4201-aa4c-f85421464ed7", [{"name": "Peshawar Zalmi", "opacity": 0.75, "x": [32.09090909090909, 22.125, 29.166666666666668, 17.0, 22.666666666666668, 13.333333333333334, 18.8, 16.2, 13.5, 7.0, 10.333333333333334, 6.2, 6.5, 4.6, 5.0, 1.0, 1.0], "type": "histogram", "uid": "6826d055-0367-42a2-b51b-deeebb3b6c00", "xaxis": "x", "yaxis": "y"}, {"name": "Karachi Kings", "opacity": 0.75, "x": [29.1, 21.5, 20.2, 22.333333333333332, 17.77777777777778, 11.9, 10.375, 6.0, 9.5, 4.0, 10.0, 2.5, 0.0], "type": "histogram", "uid": "1a38290e-55ee-496f-a3d6-083fc7a2f211", "xaxis": "x3", "yaxis": "y3"}, {"name": "Islamabad United", "opacity": 0.75, "x": [30.444444444444443, 19.0, 19.75, 15.444444444444445, 26.6, 33.5, 11.0, 11.5, 15.333333333333334, 15.0, 8.333333333333334, 0.5, 1.0, 1.0, 1.0, 0.0, 0.0], "type": "histogram", "uid": "a1ef71c7-35ad-4610-a4f3-3f8a5211f8a3", "xaxis": "x4", "yaxis": "y4"}, {"name": "Quetta Gladiators", "opacity": 0.75, "x": [31.875, 34.42857142857143, 26.444444444444443, 20.333333333333332, 24.5, 11.4, 13.333333333333334, 12.333333333333334, 6.5, 24.0, 5.0, 6.0, 12.0, 6.0, 3.0, 2.0, 0.5, 1.0, 0.5], "type": "histogram", "uid": "b8abf21e-b95f-4a04-8c1e-be3ba12176de", "xaxis": "x5", "yaxis": "y5"}, {"name": "Lahore Qalandars", "opacity": 0.75, "x": [22.125, 34.6, 20.5, 18.571428571428573, 16.571428571428573, 13.285714285714286, 20.5, 10.571428571428571, 11.333333333333334, 12.5, 11.5, 1.0, 1.0, 1.0], "type": "histogram", "uid": "0f66cccc-8e19-4820-a8a8-ef40ba68e60f", "xaxis": "x6", "yaxis": "y6"}], {"xaxis": {"dtick": 10, "tickmode": "linear"}, "yaxis": {"anchor": "x", "domain": [0.7333333333333333, 1.0]}, "xaxis2": {"anchor": "y2", "domain": [0.55, 1.0]}, "yaxis2": {"anchor": "x2", "domain": [0.7333333333333333, 1.0]}, "xaxis3": {"anchor": "y3", "domain": [0.0, 0.45]}, "yaxis3": {"anchor": "x3", "domain": [0.36666666666666664, 0.6333333333333333]}, "xaxis4": {"anchor": "y4", "domain": [0.55, 1.0]}, "yaxis4": {"anchor": "x4", "domain": [0.36666666666666664, 0.6333333333333333]}, "xaxis5": {"anchor": "y5", "domain": [0.0, 0.45]}, "yaxis5": {"anchor": "x5", "domain": [0.0, 0.26666666666666666]}, "xaxis6": {"anchor": "y6", "domain": [0.55, 1.0]}, "yaxis6": {"anchor": "x6", "domain": [0.0, 0.26666666666666666]}, "title": {"text": "Distribution of average batsman scores"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})
+                    </script>
+                </div>
+                </figure>
+                <div class = "text graph-text bat-hist-text">
+                    <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. </p>
+                </div>
+                </div>
+            </section> 
+                <!-- Bowling analysis -->
+            <section  class="bowling-performance" tabindex="2">
+                <div id class="bowling-container container">
+                    <h2>Bowling Performance</h2> 
+                    <p> A bowlers job is to stop batsman from scoring runs. They try to either get the batsman out or minimize the number of runs they concede. </p>
+                    <div class="bowling-scatter">
+                        <p>  Similar to the batsman scatter chart, the bowler scatter chart compares the bowlers on 3 metrics: </p>
+                        <ol>
+                            <li>
+                                <span class='colortext'><strong> Economy:</strong>
+                                    </span> Average runs conceded in an over
+                                </li>
+                            <li>
+                                <span class='colortext'><strong>Total Wickets</strong>
+                                </span> Total wickets taken
+                                </li>
+                            <li>
+                                <span class='colortext'><strong>Bowler Variance:</strong>
+                                    </span> Consistency in number of runs given 
+                                </li>
+                        </ol>
+                        <p>   As we move along the axes, number of wickets increase on the xaxis and ecoonomy increases along the y axis. The darker circle color signifies more consistency. 
+                        </p>
+                        <figure class = "graph">
+                            <div>
+                                <div id="97762b34-c213-40d5-ae8b-6ac7d22e0dc0" style="height: 100%; width: 100%;" class="plotly-graph-div"></div>
+                                <script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("97762b34-c213-40d5-ae8b-6ac7d22e0dc0", [{"hoverinfo": "text", "marker": {"autocolorscale": true, "cmin": 0, "color": [100.33333333333348, 4.5, 65.33333333333343, 163.5, 63.19999999999982, 75.8666666666666, 65.9, 0.5, 41.61904761904767, 61.73333333333338, 122.62222222222226, 25.155555555555615, 34.333333333333485, 4.5, 26.800000000000068, 94.01111111111115, 89.23809523809511, 40.7, 73.07142857142857, 189.8095238095237, 163.3444444444443, 29.194444444444343, 212.1666666666668, 132.33333333333326, 16.285714285714146, 88.0, 184.5000000000001, 200.66666666666666, 57.42857142857143, 72.44444444444434, 45.583333333333336, 229.7999999999999, 30.19444444444457, 188.28571428571428, 93.30000000000018, 85.35714285714286, 82.98214285714286, 104.25000000000011, 70.98214285714286, 26.285714285714285], "colorbar": {"title": {"text": "Bowler Variance"}}, "reversescale": true, "size": 25, "symbol": "circle"}, "mode": "markers", "text": ["Aamer Yamin   Lahore Qalandars", "Abrar Ahmed   Karachi Kings", "Amad Butt   Islamabad United", "Anwar Ali   Quetta Gladiators", "Bilawal Bhatti   Lahore Qalandars", "CJ Jordan   Peshawar Zalmi", "DJG Sammy   Peshawar Zalmi", "Fakhar Zaman   Lahore Qalandars", "GD Elliott   Lahore Qalandars", "Hasan Ali   Peshawar Zalmi", "Hasan Khan   Quetta Gladiators", "Imad Wasim   Karachi Kings", "Imran Khalid   Islamabad United", "Junaid Khan   Peshawar Zalmi", "Mahmudullah   Quetta Gladiators", "Mohammad Amir   Karachi Kings", "Mohammad Asghar   Peshawar Zalmi", "Mohammad Hafeez   Peshawar Zalmi", "Mohammad Irfan   Islamabad United", "Mohammad Irfan (4)   Lahore Qalandars", "Mohammad Nawaz (3)   Quetta Gladiators", "Mohammad Sami   Islamabad United", "NLTC Perera   Quetta Gladiators", "RS Bopara   Karachi Kings", "Rumman Raees   Islamabad United", "SP Narine   Lahore Qalandars", "SR Watson   Islamabad United", "Saeed Ajmal   Islamabad United", "Shadab Khan   Islamabad United", "Shahid Afridi   Peshawar Zalmi", "Shakib Al Hasan   Peshawar Zalmi", "Shoaib Malik   Karachi Kings", "Sohail Khan   Karachi Kings", "Sohail Tanvir   Lahore Qalandars", "TS Mills   Quetta Gladiators", "Usama Mir   Karachi Kings", "Usman Khan   Karachi Kings", "Wahab Riaz   Peshawar Zalmi", "Yasir Shah   Lahore Qalandars", "Zulfiqar Babar   Quetta Gladiators"], "x": [5, 0, 1, 6, 1, 7, 2, 1, 5, 13, 9, 8, 1, 3, 7, 11, 8, 6, 8, 7, 13, 13, 6, 0, 13, 11, 12, 3, 9, 2, 5, 3, 16, 14, 9, 12, 9, 16, 10, 8], "y": [7.166666666666666, 6.833333333333333, 9.799999999999999, 9.4, 6.625, 6.8, 10.5, 2.5, 9.583333333333334, 6.972972972972973, 7.03030303030303, 6.689655172413794, 11.200000000000001, 12.625, 7.466666666666667, 7.648648648648649, 8.764705882352942, 6.6000000000000005, 7.533333333333333, 9.4, 8.090909090909092, 6.757575757575758, 8.722222222222221, 10.11111111111111, 5.857142857142858, 6.5, 9.130434782608697, 9.666666666666668, 6.923076923076923, 7.0, 6.583333333333333, 7.454545454545455, 7.65625, 8.666666666666666, 7.35, 8.214285714285715, 7.653846153846154, 6.363636363636363, 6.25, 6.625], "type": "scatter", "uid": "36ccfce6-6610-4360-b0dd-93cab9645732"}], {"hovermode": "closest", "paper_bgcolor": "white", "plot_bgcolor": "white", "title": {"text": "All Bowler\'s Performance - Economy, Total Wickets, Variance"}, "xaxis": {"showgrid": false, "title": {"text": "Total wickets"}, "zeroline": false}, "yaxis": {"color": "black", "showgrid": true, "title": {"font": {"color": "black"}, "text": "Economy"}, "zeroline": false}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})
+                                </script>
+                            </div>
+                        </figure>
+                        <div class = "graph-text text bowl-scat-text">
+                            <p> Peshawar and Islamabad seem to dominate with good, consistent bowlers that have low economy with high total wickets. Quetta and Lahore though dont appear to have many bowlers in the low economy and high wickets section. </p>
+                        </div>
+                    </div>
+                <!-- Bowling histogram -->
+                    <div class="bowling-histogram">
+                        <div class = "text">
+                                <p> Like, the batsman average runs distribution, I compared bowlers economy distribution for across teams.
+                                In T20, each bowler can bowl a maximum of 4 overs so each team needs atleast 5 bolwers. Often times teams employ more than 5 bowlers to rotate their bowling and rest players. Thus, a team with lots of bolwers with good ecnomy gives them plenty of options. 
+                                </p>
+                        </div>
+                        <figure class = "graph">
+                            <div>
+                                <div id="c1ade35d-3dbb-46b5-8b59-292e2632ebb3" style="height: 100%; width: 100%;" class="plotly-graph-div"></div>
+                                <script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("c1ade35d-3dbb-46b5-8b59-292e2632ebb3", [{"name": "Peshawar Zalmi", "opacity": 0.75, "x": [6.8, 10.5, 6.972972972972973, 12.625, 8.764705882352942, 6.6000000000000005, 7.0, 6.583333333333333, 6.363636363636363], "type": "histogram", "uid": "a4bdda15-67d2-4c1a-a35a-7eacd845ca16", "xaxis": "x", "yaxis": "y"}, {"name": "Karachi Kings", "opacity": 0.75, "x": [6.833333333333333, 6.689655172413794, 7.648648648648649, 10.11111111111111, 7.454545454545455, 7.65625, 8.214285714285715, 7.653846153846154], "type": "histogram", "uid": "7bc79f4f-5970-48e5-b58d-db9e784e3985", "xaxis": "x2", "yaxis": "y2"}, {"name": "Islamabad United", "opacity": 0.75, "x": [9.799999999999999, 11.200000000000001, 7.533333333333333, 6.757575757575758, 5.857142857142858, 9.130434782608697, 9.666666666666668, 6.923076923076923], "type": "histogram", "uid": "a688e756-3ca3-43cc-bb62-bf8f48f2cb31", "xaxis": "x3", "yaxis": "y3"}, {"name": "Quetta Gladiators", "opacity": 0.75, "x": [9.4, 7.03030303030303, 7.466666666666667, 8.090909090909092, 8.722222222222221, 7.35, 6.625], "type": "histogram", "uid": "ed2af85d-e14e-4e91-844f-0771d3f33aa3", "xaxis": "x4", "yaxis": "y4"}, {"name": "Lahore Qalandars", "opacity": 0.75, "x": [7.166666666666666, 6.625, 2.5, 9.583333333333334, 9.4, 6.5, 8.666666666666666, 6.25], "type": "histogram", "uid": "55b54810-50bb-4d5d-9463-2d56da408885", "xaxis": "x5", "yaxis": "y5"}], {"xaxis": {"anchor": "y", "domain": [0.0, 0.45]}, "yaxis": {"anchor": "x", "domain": [0.7333333333333333, 1.0]}, "xaxis2": {"anchor": "y2", "domain": [0.55, 1.0]}, "yaxis2": {"anchor": "x2", "domain": [0.7333333333333333, 1.0]}, "xaxis3": {"anchor": "y3", "domain": [0.0, 0.45]}, "yaxis3": {"anchor": "x3", "domain": [0.36666666666666664, 0.6333333333333333]}, "xaxis4": {"anchor": "y4", "domain": [0.55, 1.0]}, "yaxis4": {"anchor": "x4", "domain": [0.36666666666666664, 0.6333333333333333]}, "xaxis5": {"anchor": "y5", "domain": [0.0, 0.45]}, "yaxis5": {"anchor": "x5", "domain": [0.0, 0.26666666666666666]}, "xaxis6": {"anchor": "y6", "domain": [0.55, 1.0]}, "yaxis6": {"anchor": "x6", "domain": [0.0, 0.26666666666666666]}, "title": {"text": "Distribution of average bowler economy for each team"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})
+                                </script>
+                            </div>   
+                        </figure>
+                        <div class = "graph-text text bowl-hist-text">
+                            <p> 
+                            Peshawar is a clear standout as it has 6 bowlers who give out less than 7 runs on average in an over.
+                            Quetta can improve in the bowling department since they only have 1 bolwer with an average less than 7. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section >          
+         <!-- Ranking -->
+            <section class="ranking" tabindex = "3">
+                <div class="ranking-container container">
+                    <div class = "player-score text">
+                        <h2> Player Score</h2>
+                        <p>   
+                        I ranked all players and assigned each a score based  on the following performance metrics. Each metric is scored on a scale of 0 to 3.
+                        </p>
+                        <ol>
+                            <li><span class='colortext'><strong> Average runs scored</strong> </span> </li>
+                            <li><span class='colortext'><strong>Strike rate</strong></span></li>
+                            <li><span class='colortext'> <strong>Variance of batsman runs scored </strong></span></li>
+                            <li><span class='colortext'><strong> Average number of wickets taken</strong></span></li>
+                            <li><span class='colortext'><strong>Bowling Economy</strong></span></li>
+                            <li><span class='colortext'><strong>Variance of bowler runs conceded</strong> </span></li>
+                        </ol>
+                        <p>  The Player Score is calculated as the sum of all the metric scores. 
+                        Naturally, all-rounders, who can bat as well as bowl, contribute most to a team and thus rank higher.  </p>
+                        <p> The table below displays the top 10 most valuable players based on the Player Score</p>
+                    </div>
+                    <div class = "player-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Player</th>
+                                <th> Team</th>
+                                <th> Average Runs Rank</th>
+                                <th> Strike Rate Rank</th>
+                                <th> Runs Variance Rank</th>
+                                <th> Average Wickets Rank</th>
+                                <th> Average Economy Rank</th>
+                                <th> Runs conceded Variance Rank</th>
+                                <th> Player Score</th>
+                            </tr>
+                        </thead>  
+                        <tbody>
+                            <tr>     
+                                <td> Fakhar Zaman</td>
+                                <td> Lahore Qalandars </td>
+                                <td> 3</td>
+                                <td> 3</td>
+                                <td> 2</td>
+                                <td> 2</td>
+                                <td> 3</td>
+                                <td> 3</td>
+                                <td> 16</td>
+                            </tr>    
+                            <tr>     
+                                <td> Mahmudullah </td>
+                                <td> Quetta Gladiators </td>
+                                <td> 2</td>
+                                <td> 3</td>
+                                <td> 2</td>
+                                <td> 3</td>
+                                <td> 1</td>
+                                <td> 3</td>
+                                <td> 14</td>
+                            </tr>    <tr>     
+                                <td> SP Narine</td>
+                                <td> Lahore Qalandars </td>
+                                <td> 3</td>
+                                <td> 3</td>
+                                <td> 2</td>
+                                <td> 3</td>
+                                <td> 3</td>
+                                <td> 1</td>
+                                <td> 13</td>
+                            </tr>    
+                            <tr>     
+                                <td> SR Watson</td>
+                                <td> Islamabad United </td>
+                                <td> 3</td>
+                                <td> 3</td>
+                                <td> 2</td>
+                                <td> 3</td>
+                                <td> 1</td>
+                                <td> 1</td>
+                                <td> 13</td>
+                            </tr>    
+                            <tr>     
+                                <td> Imad Wasim</td>
+                                <td> Karachi Kings </td>
+                                <td> 2</td>
+                                <td> 3</td>
+                                <td> 0</td>
+                                <td> 3</td>
+                                <td> 1</td>
+                                <td> 3</td>
+                                <td> 12</td>
+                            </tr>    
+                            <tr>     
+                                <td> Mohammad Hafeez</td>
+                                <td> Peshawar Zalmi </td>
+                                <td> 3</td>
+                                <td> 2</td>
+                                <td> 1</td>
+                                <td> 3</td>
+                                <td> 1</td>
+                                <td> 2</td>
+                                <td> 12</td>
+                            </tr>    
+                            <tr>     
+                                <td> Shakib Al Hasan</td>
+                                <td> Peshawar Zalmi </td>
+                                <td> 2</td>
+                                <td> 2</td>
+                                <td> 2</td>
+                                <td> 3</td>
+                                <td> 1</td>
+                                <td> 2</td>
+                                <td> 12</td>
+                            </tr>    
+                            <tr>     
+                                <td> NLTC Perera</td>
+                                <td> Quetta Gladiators </td>
+                                <td> 2</td>
+                                <td> 2</td>
+                                <td> 2</td>
+                                <td> 3</td>
+                                <td> 1</td>
+                                <td> 1</td>
+                                <td> 11</td>
+                            </tr>    
+                            <tr>     
+                                <td> Shoaib Malik</td>
+                                <td> Karachi Kings </td>
+                                <td> 3</td>
+                                <td> 2</td>
+                                <td> 2</td>
+                                <td> 2</td>
+                                <td> 1</td>
+                                <td> 1</td>
+                                <td> 11</td>
+                            </tr>    
+                            <tr>     
+                                <td> Shahid Afridi</td>
+                                <td> Peshawar Zalmi </td>
+                                <td> 3</td>
+                                <td> 3</td>
+                                <td> 2</td>
+                                <td> 1</td>
+                                <td> 1</td>
+                                <td> 1</td>
+                                <td> 11</td>
+                            </tr>    
     
+                        </tbody>
+                    </table>
+                    <div class="graph-text table-text text">
+                        Top Players
+                    </div>
+    
+                    </div>
+                    <!-- Box plot for scores -->
+                    <div class = "player-boxplot text">
+                        <p>
+                        To further comapre the distribution of player scores among teams, I plotted the box plots below.
+                        </p>
+                        <figure class = "graph">
+                            <div>
+                                <div id="1cd394bf-3f0c-4280-908f-dacdad188964" style="height: 100%; width: 100%;" class="plotly-graph-div"></div>
+                                <script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("1cd394bf-3f0c-4280-908f-dacdad188964", [{"boxmean": "sd", "boxpoints": "all", "name": "Peshawar Zalmi", "y": [7.0, 11.0, 8.0, 12.0, 6.0, 10.0, 6.0, 7.0, 12.0, 3.0, 3.0, 8.0, 8.0, 9.0, 2.0, 9.0, 2.0, 5.0], "type": "box", "uid": "819aebc2-7d55-48bd-bcb5-6a5dfd47390b"}, {"boxmean": "sd", "boxpoints": "all", "name": "Islamabad United", "y": [6.0, 13.0, 7.0, 5.0, 7.0, 7.0, 10.0, 4.0, 8.0, 7.0, 6.0, 9.0, 2.0, 2.0, 7.0, 7.0, 5.0, 5.0], "type": "box", "uid": "52099d65-23ed-4d41-a74f-a41dae8ac37b"}, {"boxmean": "sd", "boxpoints": "all", "name": "Quetta Gladiators", "y": [6.0, 7.0, 7.0, 8.0, 7.0, 10.0, 11.0, 14.0, 8.0, 9.0, 8.0, 3.0, 8.0, 2.0, 2.0, 2.0, 7.0, 2.0, 9.0], "type": "box", "uid": "22bff615-5584-45f7-a427-0a89c8f8b624"}, {"boxmean": "sd", "boxpoints": "all", "name": "Karachi Kings", "y": [7.0, 7.0, 11.0, 8.0, 7.0, 8.0, 12.0, 8.0, 4.0, 10.0, 5.0, 9.0, 5.0, 4.0], "type": "box", "uid": "a4b5f448-3260-4dab-a3d5-354490cc2632"}, {"boxmean": "sd", "boxpoints": "all", "name": "Lahore Qalandars", "y": [16.0, 8.0, 7.0, 7.0, 13.0, 6.0, 8.0, 10.0, 9.0, 11.0, 9.0, 7.0, 5.0, 3.0], "type": "box", "uid": "81806230-20e1-4cb0-8759-22d59851b805"}], {"title": {"text": "Player Score distribution for each team"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})</script>
+                            </div>
+                        </figure>
+                    <div class = "box-plot-text graph-text text">
+                        <p> Box plot paints an interesting picture. Notice that Lahore has a highest median score and infact has the best player. But, the team only has 14 players. While Quetta has 19 players and 14 players with score greater than 7</p>
+                        <br>
+                        <p>
+                        Overall, Peshawar and Quetta seem to have the most balanced teams, both of whom were the tournament finalist. 
+                        Peshawar has good bowlers while Quetta has good batsman. 
+                        <br>
+                        Lahore Qalandars and Karachi Kings need to buy more players to match the other teams, specifically batsman.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" tabindex="4">
+            <div class = 'footer-container container text'>
+            <h2> Data and Methodology </h2>
+                <p> I was inspired by <a href = "https://www.kaggle.com/ash316/let-s-play-cricket"> this Kaggle project </a> which is a similar analysis but with Indian Premier League data. 
+                    I used <a href= "https://cricsheet.org/" > ball-ball data </a> for 24 matches (48 innings) where each data point includes delivery number, bowler and batsman name and the outcome of the delivery. 
+                </p>
+            </div>
+        </footer>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    </body>
 </html>

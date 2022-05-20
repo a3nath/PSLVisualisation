@@ -1,0 +1,27 @@
+{
+  "name": "pslvisualisation",
+  "version": "1.0.0",
+  "description": "A visulisation of the different teams' performance in the 2nd edition of Pakistan Super League in 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a3nath/PSLVisualisation.git"
+  },
+  "author": "a3nath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a3nath/PSLVisualisation/issues"
+  },
+  "homepage": "https://github.com/a3nath/PSLVisualisation#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
+}

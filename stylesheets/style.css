@@ -1,13 +1,36 @@
-/*Main style sheet */
 
-/* intro section */
+:root{
+    --main-bgcolor:#c2d6dd
+}
+
+html{
+    font-size: 62.5%;
+    font-weight: 400;
+    box-sizing: border-box;
+}
 
 h1 {text-align: center;
-    font-size: 48px;
+    font-size: 4rem;
     color: #2b2f31;
     font-weight: bold;
     font: 'Roboto','PT Sans';
     line-height: 1.4;
+}
+
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 h2 {
@@ -19,6 +42,10 @@ h3 {text-align: center;
     color: #2B416C;
 }
 
+p {
+    font-size: calc(1rem + 0.65vw);
+}
+
 .cricgif {
     display: block;
     width: 60%;
@@ -26,16 +53,13 @@ h3 {text-align: center;
     margin-left: 20%;
 }
 
-.container {
-    display:block;
-}
 
-#Home {
+.Home {
     display: block;
     box-sizing: border-box;
 }
 
-#logo-row {
+.logo-row {
     display:grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 
@@ -48,37 +72,34 @@ figcaption {
 body{
     display: block;
     font-family: 'Open Sans','PT Sans','Arial';
-    font-size: 24px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
     box-sizing: border-box;
     font-weight: 300;
-    background-color: #c2d6dd
+    background-color: var(--main-bgcolor);
+
 }
 
-body, p {
-    font-weight: 300;
+section{
+    padding: 40px 0;
+    margin:0
 }
 
-#Batting { 
+.batting { 
     background-color: #ddc9c2;
-    margin-left: -250px;
+    /* margin-left: -250px;
     margin-right:-250px;
     padding-left:250px;
     padding-right: 250px;
     margin-bottom: -25px;
-    margin-top: -25px;
+    margin-top: -25px; */
 } 
 
-#BattingPerformance {
+.batting-performance {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #ddc9c2;
 }
 
-#Bowling{
+.bowling{
     background-color: #c9c2dd;
     margin-left: -250px;
     margin-right:-250px;
@@ -89,13 +110,13 @@ body, p {
     
 }
 
-#BowlingPerformance{
+.bowling-performance{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #c9c2dd;   
 }
 
-#Ranking{
+.ranking{
     background-color: #c2d6dd;;
     margin-left: -250px;
     margin-right:-250px;
@@ -106,28 +127,26 @@ body, p {
     
 }
 
-#PlayerScore{
+.player-score{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #c2d6dd;   
 }
 
-#Bottom {background-color: whitesmoke;
+/* #Bottom {background-color: whitesmoke;
     margin-left: -250px;
     margin-right:-250px;
     padding-left:250px;
     padding-right: 250px;
     margin-bottom: -25px;
     margin-top: -25px;
-}
+} */
 
-#Footer {background-color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.footer {background-color: white;
     background-color: whitesmoke;    
 }
 
-footer {
+.footer {
     border-top: dashed 1px black;
 }
 
@@ -142,10 +161,10 @@ footer {
 }
 
 
-.text {
+/* .text {
     margin-left: 35px;
     margin-right: 35px;
-}
+} */
 
 .colortext{
     color: #2B416C;
@@ -161,7 +180,6 @@ table { border: solid 2px white;
     padding: 10px;
 }
 
-}
 
 tr {
     border-bottom: solid 2px white;
@@ -198,29 +216,28 @@ tr:hover {
     color: white;
 }
 
-/** **/
+/** media queries**/
 
 @media screen and (max-width:1100px) {
     .container{width:100%;
         }
-   #logo-row{display:flex;
+   .logo-row{display:flex;
     flex-direction:row;
        justify-content: center;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    #logo-row{display: grid;
+    .logo-row{display: grid;
     grid-template-columns: 33% 33% 33%
     }
     .container{
         width:90%;
     }
-    
 }
 
 @media screen and (max-width: 840px) {
-    #logo-row{display: flex;
+    .logo-row{display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
