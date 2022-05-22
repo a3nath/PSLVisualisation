@@ -83,6 +83,12 @@ section{
     margin:0
 }
 
+.team-logo-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
 .batting { 
     background-color: #ddc9c2;
     /* margin-left: -250px;
@@ -218,14 +224,14 @@ tr:hover {
 
 /** media queries**/
 
-@media screen and (max-width:1100px) {
+/* @media screen and (max-width:1100px) {
     .container{width:100%;
         }
    .logo-row{display:flex;
     flex-direction:row;
        justify-content: center;
     }
-}
+} */
 
 @media screen and (max-width: 1000px) {
     .logo-row{display: grid;

@@ -34,8 +34,11 @@
                     <div class = 'analysis-intro text'>
                         <p>
                             I studied how each teams players perfomed in the tournament.
+
+                            The game is divided into two kinds of players - batsmen (person batting) and bowler (the person bowling)
+                            The baller bowls the ball and the batsman tries to hit it. The further he hits the ball goes the more runs a batsman can score.
+                            A batsman's role is to score as many runs as possbile while a bowler's function is to bowl such that batsman cant hit it far enough or get him out(get his wicket)
                             I broke down the performance in Batting and Bowling and assigned a score based on their batting and bowling performance.
-                            So natually, all-rounders who bat and bowl were ranked higher.
                         </p> 
                         <div class="team-text text">
                             <p> The 2017 edition of PSL was played amongst 5 teams
@@ -55,7 +58,7 @@
                                     <a href = "https://www.lahoreqalandars.com/" target="_blank"> <img src = "img/Lahore_Qalandars_logo.svg" width = "150", height = "150" alt = "Lahore Qalandars logo"> <figcaption>Lahore Qalandars</figcaption> </a>
                                 </li>
                                 <li class='team-logo'>
-                                    <a href = "https://www.lahoreqalandars.com/" target="_blank"> <img src = "img/Karachi_Kings_logo.svg" width = "150", height = "150" alt = "Karachi Kings logo"><figcaption> Karachi Kings</figcaption></a> 
+                                    <a href = "https://karachikings.com.pk/" target="_blank"> <img src = "img/Karachi_Kings_logo.svg" width = "150", height = "150" alt = "Karachi Kings logo"><figcaption> Karachi Kings</figcaption></a> 
                                 </li>
                             </ul>
                         </div>
@@ -66,15 +69,14 @@
                 <div class="batting-container container">
                     <div class= "text">   
                         <h2> Batting Performance </h2>
-                        <p> In T20, batting is pretty straighforward and  unlike bowling, almost every player has a batting stat.
-                        </p>
-                        <p> To start, I compared individual batting peformances using the follwing 3 metrics: </p>
+                        <p> Firstly, I compared individual batting peformances of each batsman based on the follwing 3 criterias: </p>
                         <ol>
                             <li><span class = 'colortext'><strong>Average runs:</strong></span> Average runs scored in each game</li>
                             <li><span class='colortext'><strong>Strike rate:</strong></span> Runs scored per 100 balls</li>
                             <li><span class='colortext'><strong> Score variance:</strong></span> Batsman's scoring consistency </li>
                         </ol>
                     <p> In the plot below, as we scroll left to right the average runs increases, bottom to top strike rate increases. The darker circle color represents more consistency.
+                        The farther right and up and darker the better
                     <br>Hover over a point and you can view the player name and team name.</p>
                 </div>
                 <figure class = graph>
@@ -86,13 +88,17 @@
                 </figure>
                 <div class = "text graph-text bat-scat-text">
                     <p>
-                        There are some key takeaways from the visual, for example we can observe that Kamran Akmal, with one of the highest averge and strike rate is very inconsitent. So, in a crucial game he might not perform well.
+                        There are some key takeaways from the visual, for example we can observe that Kamran Akmal has one of the highest averge runs and strike rate but is very inconsitent. So, in a crucial game he might not perform well.
                     </p>
                 </div>
                     <!-- Batsman Histogram -->
-                <div class = "text">
-                        <p> Next, I compared the distribution of average batsman runs between teams. 
-                        For each team, you can observe the number of batsman in each range.
+                <div class = "graph-pre-text">
+
+                        <p> Next, I compared the distribution of average batsman runs for each teams. 
+                        On y axis, we have number of batsman, and on x the average number of runs scored
+                        A fatter, taller tail on the right suggests that the team has more batsmen who score high
+                        </p>
+                        <p>For each team, you can observe the number of batsman in each range.
                         </p>
                 </div>
                 <figure class='graph'>
@@ -103,7 +109,10 @@
                 </div>
                 </figure>
                 <div class = "text graph-text bat-hist-text">
-                    <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. </p>
+                    <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. 
+                        Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. 
+                        Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. 
+                    </p>
                 </div>
                 </div>
             </section> 
@@ -129,6 +138,7 @@
                                 </li>
                         </ol>
                         <p>   As we move along the axes, number of wickets increase on the xaxis and ecoonomy increases along the y axis. The darker circle color signifies more consistency. 
+                            A point on the right side but lower on the y axis with darker means the bowler takes wickets, gives away few runs and is consistent 
                         </p>
                         <figure class = "graph">
                             <div>
@@ -158,7 +168,7 @@
                         <div class = "graph-text text bowl-hist-text">
                             <p> 
                             Peshawar is a clear standout as it has 6 bowlers who give out less than 7 runs on average in an over.
-                            Quetta can improve in the bowling department since they only have 1 bolwer with an average less than 7. 
+                            On the oter hand, Quetta only has 1 bolwer with an average less than 7. 
                             </p>
                         </div>
                     </div>
@@ -184,7 +194,7 @@
                         Naturally, all-rounders, who can bat as well as bowl, contribute most to a team and thus rank higher.  </p>
                         <p> The table below displays the top 10 most valuable players based on the Player Score</p>
                     </div>
-                    <div class = "player-table">
+                    <!-- <div class = "player-table">
                     <table>
                         <thead>
                             <tr>
@@ -316,7 +326,7 @@
                         Top Players
                     </div>
     
-                    </div>
+                    </div> -->
                     <!-- Box plot for scores -->
                     <div class = "player-boxplot text">
                         <p>
@@ -329,7 +339,7 @@
                             </div>
                         </figure>
                     <div class = "box-plot-text graph-text text">
-                        <p> Box plot paints an interesting picture. Notice that Lahore has a highest median score and infact has the best player. But, the team only has 14 players. While Quetta has 19 players and 14 players with score greater than 7</p>
+                        <p> Box plot paints an interesting picture. Notice that Lahore has a highest median score and infact has the best player and 11 players with score greater than 7. But the team only has 14 players. While Quetta has 19 players and 13 players with score greater than 7 and Peshawar 11</p>
                         <br>
                         <p>
                         Overall, Peshawar and Quetta seem to have the most balanced teams, both of whom were the tournament finalist. 
