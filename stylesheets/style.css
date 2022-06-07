@@ -1,6 +1,9 @@
 
 :root{
-    --main-bgcolor:#c2d6dd
+    --main-bgcolor:#fff;
+    --secondary-bgcolor: #ffead6;
+    --main-fontcolor: #232323;
+    --font-family: "merriweather",serif
 }
 
 html{
@@ -13,7 +16,6 @@ h1 {text-align: center;
     font-size: 4rem;
     color: #2b2f31;
     font-weight: bold;
-    font: 'Roboto','PT Sans';
     line-height: 1.4;
 }
 
@@ -71,7 +73,7 @@ figcaption {
 
 body{
     display: block;
-    font-family: 'Open Sans','PT Sans','Arial';
+    font-family: var(--font-family);
     box-sizing: border-box;
     font-weight: 300;
     background-color: var(--main-bgcolor);
@@ -89,8 +91,7 @@ section{
     margin: 50px 0;
 }
 
-.batting { 
-    background-color: #ddc9c2;
+.batting-container { 
     /* margin-left: -250px;
     margin-right:-250px;
     padding-left:250px;
@@ -102,11 +103,11 @@ section{
 .batting-performance {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #ddc9c2;
+    background-color: var(--secondary-bgcolor);;
 }
 
 .bowling{
-    background-color: #c9c2dd;
+    background-color:var(--secondary-bgcolor);
     margin-left: -250px;
     margin-right:-250px;
     padding-left:250px;
@@ -119,11 +120,11 @@ section{
 .bowling-performance{
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #c9c2dd;   
+    background-color: var(--secondary-bgcolor);   
 }
 
 .ranking{
-    background-color: #c2d6dd;;
+    background-color:var(--secondary-bgcolor);
     margin-left: -250px;
     margin-right:-250px;
     padding-left:250px;
@@ -136,7 +137,7 @@ section{
 .player-score{
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #c2d6dd;   
+    background-color:var(--secondary-bgcolor);   
 }
 
 /* #Bottom {background-color: whitesmoke;
@@ -148,8 +149,8 @@ section{
     margin-top: -25px;
 } */
 
-.footer {background-color: white;
-    background-color: whitesmoke;    
+.footer {
+    background-color: #d6ebff;    
 }
 
 .footer {
