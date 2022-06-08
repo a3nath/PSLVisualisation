@@ -22,7 +22,7 @@
             </header>
             <section class='intro-text' id='Home' tabindex="0">
                 <div class="intro-container container">
-                    <div class='cricket-text text'>
+                    <div class='cricket-text'>
                         <p> 
                             <a href='https://en.wikipedia.org/wiki/Pakistan_Super_League' blank='_'>Pakistan Super League (PSL) is a </a> 
                             <a href='https://en.wikipedia.org/wiki/Cricket'>cricket </a>
@@ -30,7 +30,7 @@
                         </p>
                         <p> It is a sport played between two teams in which each team gets 20 overs (120  balls) to score as many runs as possible. The team which scores the most at the end of 20 overs wins.</p>
                     </div>
-                    <div class='analysis-intro text'>
+                    <div class='analysis-intro'>
                         <p>
                             I studied how each teams players perfomed in the tournament.
 
@@ -39,7 +39,7 @@
                             A batsman's role is to score as many runs as possbile while a bowler's function is to bowl such that batsman cant hit it far enough or get him out(get his wicket)
                             I broke down the performance in Batting and Bowling and assigned a score based on their batting and bowling performance.
                         </p> 
-                        <div class="team-text text">
+                        <div class="team-text">
                             <p> The 2017 edition of PSL was played amongst 5 teams
                             </p>
                             <!-- Team logos -->
@@ -81,7 +81,7 @@
                             The farther right and up and darker the better
                             Hover over a point and you can view the player name and team name.
                         </p>
-                        <figure class = "graph bat-scat-graph">
+                        <figure class = "graph graph-bat-scat">
                             <div>
                                 <div id="aee5290d-8303-4047-81d8-6ea8cb426fad" class="plotly-graph-div" style="height:100%; width:100%;">
                                 </div>
@@ -90,7 +90,7 @@
                                 </script>
                             </div>
                         </figure>
-                        <div class = "text graph-text bat-hist-text">
+                        <div class = "graph-text bat-scat-text">
                             <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. 
                                 Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. 
                                 Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. 
@@ -99,7 +99,7 @@
                     </div>
                     <div class="bat-box">
                         <p>Graph below</p>
-                        <figure>
+                        <figure class='graph graph-bat-box'>
                             <div>                            
                                 <div id="fc1e022a-6b4a-4e37-b748-c74fc911ddd0" class="plotly-graph-div" style="height:100%; width:100%;">
                                 </div>            
@@ -108,7 +108,7 @@
                                 </script>
                             </div>
                         </figure>
-                        <div class = "text graph-text bat-hist-text">
+                        <div class = "graph-text bat-box-text">
                             <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. 
                                 Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. 
                                 Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. 
@@ -143,7 +143,7 @@
                         <p>   As we move along the axes, number of wickets increase on the xaxis and ecoonomy increases along the y axis. The darker circle color signifies more consistency. 
                             A point on the right side but lower on the y axis with darker means the bowler takes wickets, gives away few runs and is consistent 
                         </p>
-                        <figure class = "graph bowl-scatter">
+                        <figure class = "graph graph-bowl-scat">
                                <div>                            
                                <div id="4430f2fe-1384-4a62-9d72-6236920b13e1" class="plotly-graph-div" style="height:100%; width:100%;">
                                </div>            
@@ -152,25 +152,25 @@
                                </script>
                                </div>
                         </figure>
-                        <div class = "graph-text text bowl-scat-text">
+                        <div class = "graph-text bowl-scat-text">
                             <p> Peshawar and Islamabad seem to dominate with good, consistent bowlers that have low economy with high total wickets. Quetta and Lahore though dont appear to have many bowlers in the low economy and high wickets section. </p>
                         </div>
                     </div>
                 <!-- Bowling histogram -->
                     <div class="bowl-box">
-                        <div class = "text">
+                        <div class = "">
                                 <p> Like, the batsman average runs distribution, I compared bowlers economy distribution for across teams.
                                 In T20, each bowler can bowl a maximum of 4 overs so each team needs atleast 5 bolwers. Often times teams employ more than 5 bowlers to rotate their bowling and rest players. Thus, a team with lots of bolwers with good ecnomy gives them plenty of options. 
                                 </p>
                         </div>
-                        <figure class = "graph">
+                        <figure class="graph graph-bowl-box">
                             <div>
                                 <div id="d270974a-da4c-4ce4-9502-7d02aea5d60d" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
                                 <script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};if (document.getElementById("d270974a-da4c-4ce4-9502-7d02aea5d60d")) {Plotly.newPlot("d270974a-da4c-4ce4-9502-7d02aea5d60d",[{"boxmean":"sd","boxpoints":"all","name":"Islamabad United","y":[7.533333333333333,6.757575757575758,5.857142857142858,9.130434782608697,9.666666666666668,6.923076923076923],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Karachi Kings","y":[6.689655172413794,7.648648648648649,10.11111111111111,7.454545454545455,7.65625,8.214285714285715,7.653846153846154],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Lahore Qalandars","y":[7.166666666666666,6.625,9.583333333333334,9.4,6.5,8.666666666666666,6.25],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Peshawar Zalmi","y":[6.8,10.5,6.972972972972973,12.625,8.764705882352942,6.6000000000000005,7.0,6.583333333333333,6.363636363636363],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Quetta Gladiators","y":[9.4,7.03030303030303,7.466666666666667,8.090909090909092,8.722222222222221,7.35,6.625],"type":"box"}],{"legend":{"title":{"text":"Teams"}},"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"title":{"text":"Bowler Economy distribution for each team"},"xaxis":{"title":{"text":"Teams"}},"yaxis":{"title":{"text":"Economy"}}},{"responsive": true})}; 
                                 </script>
                             </div>  
                         </figure>
-                        <div class = "graph-text text bowl-hist-text">
+                        <div class="graph-text bowl-box-text">
                             <p> 
                             Peshawar is a clear standout as it has 6 bowlers who give out less than 7 runs on average in an over.
                             On the oter hand, Quetta only has 1 bolwer with an average less than 7. 
@@ -180,9 +180,9 @@
                 </div>
             </section >          
          <!-- Ranking -->
-            <section class="overall" tabindex = "3">
+            <section class="overall" tabindex="3">
                 <div class="overall-container container">
-                    <div class = "overall-intro text">
+                    <div class="overall-intro">
                         <h2> Player Score</h2>
                         <p>   
                         I ranked all players and assigned each a score based on the following performance metrics. Each metric is scored on a scale of 0 to 3.
@@ -199,7 +199,7 @@
                             More explanation. Read more in methodology
                     </div>
                     <!-- Box plot for scores -->
-                    <div class = "player-histogram text">
+                    <div class = "overall-histogram">
                         <p>
                         To further comapre the distribution of player scores among teams, I plotted the box plots below.
                         </p>
@@ -210,7 +210,7 @@
                                 </script>
                             </div>
                         </figure>
-                        <div class = "box-histogram-text graph-text text">
+                        <div class = "histogram-text graph-text">
                             <p> Box plot paints an interesting picture. Notice that Lahore has a highest median score and infact has the best player and 11 players with score greater than 7. But the team only has 14 players. While Quetta has 19 players and 13 players with score greater than 7 and Peshawar 11</p>
                             <p>
                             Overall, Peshawar and Quetta seem to have the most balanced teams, both of whom were the tournament finalist. 
@@ -219,7 +219,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class = "player-heatmap">
+                    <div class = "overall-heatmap">
                         <p>
                         To further comapre the distribution of player scores among teams, I plotted the box plots below.
                         </p>
@@ -246,7 +246,7 @@
             </section>
         </main>
         <footer class="footer" tabindex="4">
-            <div class = 'footer-container container text'>
+            <div class = 'footer-container container'>
             <h2> Data and Methodology </h2>
                 <p> I was inspired by <a href = "https://www.kaggle.com/ash316/let-s-play-cricket"> this Kaggle project </a> which is a similar analysis but with Indian Premier League data. 
                     I used <a href= "https://cricsheet.org/" > ball-ball data </a> for 24 matches (48 innings) where each data point includes delivery number, bowler and batsman name and the outcome of the delivery. 

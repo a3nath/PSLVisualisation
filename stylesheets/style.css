@@ -1,6 +1,6 @@
 
 :root{
-    --main-bgcolor:#fff;
+    --primary-bgcolor:#fff;
     --secondary-bgcolor: #ffead6;
     --main-fontcolor: #232323;
     --font-family: "merriweather",serif
@@ -76,7 +76,7 @@ body{
     font-family: var(--font-family);
     box-sizing: border-box;
     font-weight: 300;
-    background-color: var(--main-bgcolor);
+    background-color: var(--primary-bgcolor);
 
 }
 
@@ -91,30 +91,10 @@ section{
     margin: 50px 0;
 }
 
-.batting-container { 
-    /* margin-left: -250px;
-    margin-right:-250px;
-    padding-left:250px;
-    padding-right: 250px;
-    margin-bottom: -25px;
-    margin-top: -25px; */
-} 
-
 .batting-performance {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--secondary-bgcolor);;
-}
-
-.bowling{
-    background-color:var(--secondary-bgcolor);
-    margin-left: -250px;
-    margin-right:-250px;
-    padding-left:250px;
-    padding-right: 250px;
-    margin-bottom: -25px;
-    margin-top: -25px;
-    
 }
 
 .bowling-performance{
@@ -123,7 +103,7 @@ section{
     background-color: var(--secondary-bgcolor);   
 }
 
-.ranking{
+.overall{
     background-color:var(--secondary-bgcolor);
     margin-left: -250px;
     margin-right:-250px;
@@ -134,28 +114,11 @@ section{
     
 }
 
-.player-score{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color:var(--secondary-bgcolor);   
-}
-
-/* #Bottom {background-color: whitesmoke;
-    margin-left: -250px;
-    margin-right:-250px;
-    padding-left:250px;
-    padding-right: 250px;
-    margin-bottom: -25px;
-    margin-top: -25px;
-} */
-
 .footer {
-    background-color: #d6ebff;    
+    background-color: var(--primary-bgcolor); 
+    border-top: dashed 1px black;   
 }
 
-.footer {
-    border-top: dashed 1px black;
-}
 
 ::-moz-selection {
     background:#663399}
@@ -164,64 +127,14 @@ section{
 }
 
 .graph {
-    padding: 10px;
+    padding: 40px 0;
 }
 
-
-/* .text {
-    margin-left: 35px;
-    margin-right: 35px;
-} */
 
 .colortext{
     color: #2B416C;
 }
 
-/**Raning Table properties**/
-
-table { border: solid 2px white; 
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    margin: 10px;
-    border-collapse: collapse;
-    padding: 10px;
-}
-
-
-tr {
-    border-bottom: solid 2px white;
-}
-
-th { 
-    color: #2B416C;
-    text-align: center;
-    border-bottom: solid 2px white;
-    background-color: #2B416C;
-    color: aliceblue;
-    font-size: 16px;
-    font-weight: normal;
-}
-
-td {
-    text-align: center;
-    padding: 5px;
-    border-bottom: solid 2px white;
-    font-size: 16px;
-    font-weight: normal;
-}
-
-tr:nth-child(even) {
-    background-color: ;
-}
-
-tr:nth-child(odd) {
-    background-color: white;
-}
-
-tr:hover {
-    background-color: lightslategrey;
-    color: white;
-}
 
 /** media queries**/
 
