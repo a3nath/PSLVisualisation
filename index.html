@@ -18,12 +18,11 @@
             <header class="header" id="home">
                 <h1> Pakistan Super League 2017 Visulisation </h1>
                 <h3>   A cricket tournament analysis </h3>
-                <!-- <img class = "cricgif" src="img/cricgif.gif" alt= "cricket gif" align="middle">  -->
-                    
+                <!-- <img class = "cricgif" src="img/cricgif.gif" alt= "cricket gif" align="middle">  -->    
             </header>
             <section class='intro-text' id='Home' tabindex="0">
-                <div class = "intro-container container">
-                    <div class = 'cricket-text text'>
+                <div class="intro-container container">
+                    <div class='cricket-text text'>
                         <p> 
                             <a href='https://en.wikipedia.org/wiki/Pakistan_Super_League' blank='_'>Pakistan Super League (PSL) is a </a> 
                             <a href='https://en.wikipedia.org/wiki/Cricket'>cricket </a>
@@ -31,7 +30,7 @@
                         </p>
                         <p> It is a sport played between two teams in which each team gets 20 overs (120  balls) to score as many runs as possible. The team which scores the most at the end of 20 overs wins.</p>
                     </div>
-                    <div class = 'analysis-intro text'>
+                    <div class='analysis-intro text'>
                         <p>
                             I studied how each teams players perfomed in the tournament.
 
@@ -65,9 +64,9 @@
                     </div>
                 </div>
             </section>
-            <section class="batting-performance" tabindex="2">
+            <section class="batting-performance" tabindex="1">
                 <div class="batting-container container">
-                    <div class= "text">   
+                    <div class= "bat-intro">   
                         <h2> Batting Performance </h2>
                         <p> Firstly, I compared individual batting peformances of each batsman based on the follwing 3 criterias: </p>
                         <ol>
@@ -75,35 +74,57 @@
                             <li><span class='colortext'><strong>Strike rate:</strong></span> Runs scored per 100 balls</li>
                             <li><span class='colortext'><strong> Score variance:</strong></span> Batsman's scoring consistency </li>
                         </ol>
-                    <p> In the plot below, as we scroll left to right the average runs increases, bottom to top strike rate increases. The darker circle color represents more consistency.
-                        The farther right and up and darker the better
-                    <br>Hover over a point and you can view the player name and team name.</p>
-                </div>
-                <figure class = "graph bat-scat-graph">
-                    <div>
-                        <div id="aee5290d-8303-4047-81d8-6ea8cb426fad" class="plotly-graph-div" style="height:100%; width:100%;"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {}; if (document.getElementById("aee5290d-8303-4047-81d8-6ea8cb426fad")) {Plotly.newPlot("aee5290d-8303-4047-81d8-6ea8cb426fad",                        [{"hovertemplate":"color=Islamabad United<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Islamabad United","marker":{"color":"#636efa","symbol":"circle"},"mode":"markers","name":"Islamabad United","orientation":"v","showlegend":true,"x":[11.0,30.444444444444443,1.0,0.0,15.333333333333334,0.0,33.5,0.5,15.0,1.0,19.0,11.5,26.6,1.0,19.75,8.333333333333334,15.444444444444445],"xaxis":"x","y":[157.14285714285714,110.93117408906883,25.0,0.0,124.32432432432432,0.0,131.37254901960785,50.0,88.23529411764706,33.333333333333336,132.5581395348837,102.22222222222223,134.34343434343435,100.0,108.21917808219177,96.15384615384616,118.80341880341881],"yaxis":"y","type":"scatter"},{"hovertemplate":"color=Karachi Kings<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Karachi Kings","marker":{"color":"#EF553B","symbol":"circle"},"mode":"markers","name":"Karachi Kings","orientation":"v","showlegend":true,"x":[6.0,4.0,22.333333333333332,10.375,10.0,21.5,11.9,17.77777777777778,29.1,2.5,0.0,9.5,20.2],"xaxis":"x","y":[114.28571428571429,114.28571428571429,162.09677419354838,129.6875,125.0,114.36170212765957,94.44444444444444,108.84353741496598,109.81132075471699,125.0,0.0,111.76470588235294,120.23809523809524],"yaxis":"y","type":"scatter"},{"hovertemplate":"color=Lahore Qalandars<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Lahore Qalandars","marker":{"color":"#00cc96","symbol":"circle"},"mode":"markers","name":"Lahore Qalandars","orientation":"v","showlegend":true,"x":[18.571428571428573,1.0,16.571428571428573,11.333333333333334,11.5,12.5,22.125,13.285714285714286,1.0,34.6,20.5,20.5,1.0,10.571428571428571],"xaxis":"x","y":[120.37037037037037,66.66666666666667,170.58823529411765,103.03030303030303,100.0,96.15384615384616,136.15384615384616,116.25,28.571428571428573,149.13793103448276,146.42857142857142,124.24242424242425,100.0,92.5],"yaxis":"y","type":"scatter"},{"hovertemplate":"color=Peshawar Zalmi<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Peshawar Zalmi","marker":{"color":"#ab63fa","symbol":"circle"},"mode":"markers","name":"Peshawar Zalmi","orientation":"v","showlegend":true,"x":[6.2,13.5,6.5,29.166666666666668,13.333333333333334,22.666666666666668,1.0,32.09090909090909,10.333333333333334,4.6,17.0,5.0,22.125,18.8,16.2,7.0,1.0],"xaxis":"x","y":[79.48717948717949,110.20408163265306,86.66666666666667,129.62962962962962,127.65957446808511,101.49253731343283,16.666666666666668,128.83211678832117,67.3913043478261,153.33333333333334,96.83544303797468,57.69230769230769,163.88888888888889,106.81818181818181,120.8955223880597,92.10526315789474,50.0],"yaxis":"y","type":"scatter"},{"hovertemplate":"color=Quetta Gladiators<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Quetta Gladiators","marker":{"color":"#FFA15A","symbol":"circle"},"mode":"markers","name":"Quetta Gladiators","orientation":"v","showlegend":true,"x":[2.0,0.5,1.0,6.0,24.0,31.875,6.0,13.333333333333334,5.0,12.333333333333334,12.0,34.42857142857143,6.5,24.5,11.4,3.0,26.444444444444443,20.333333333333332,0.5],"xaxis":"x","y":[66.66666666666667,50.0,14.285714285714286,105.88235294117646,126.3157894736842,121.42857142857143,66.66666666666667,111.11111111111111,105.26315789473684,137.03703703703704,171.42857142857142,148.76543209876544,96.29629629629629,106.52173913043478,129.54545454545453,33.333333333333336,127.95698924731182,128.8732394366197,33.333333333333336],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Average Batting Runs"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Strike Rate"}},"legend":{"title":{"text":"Teams"},"tracegroupgap":0},"margin":{"t":60},"shapes":[{"line":{"color":"red","width":1},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":100.78578820515864,"y1":100.78578820515864,"yref":"y"},{"line":{"color":"green","width":1},"type":"line","x0":12.966424062049061,"x1":12.966424062049061,"xref":"x","y0":0,"y1":1,"yref":"y domain"}],"title":{"text":"Batting runs vs Batting strike rate for each team"}},{"responsive": true})};
-                        </script>
+                        
                     </div>
-                </figure>
-                <div class = "text graph-text bat-hist-text">
-                    <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. 
-                        Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. 
-                        Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. 
-                    </p>
-                </div>
-                <figure>
-                    <div>                            <div id="fc1e022a-6b4a-4e37-b748-c74fc911ddd0" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("fc1e022a-6b4a-4e37-b748-c74fc911ddd0")) {                    Plotly.newPlot(                        "fc1e022a-6b4a-4e37-b748-c74fc911ddd0",                        [{"boxmean":"sd","boxpoints":"all","name":"Islamabad United","y":[8.333333333333334,11.5,15.444444444444445,15.0,30.444444444444443,33.5,1.0,19.75,0.0,0.5,1.0,15.333333333333334,0.0,19.0,26.6,11.0,1.0],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Karachi Kings","y":[29.1,17.77777777777778,10.0,10.375,22.333333333333332,21.5,6.0,11.9,9.5,20.2,4.0,2.5,0.0],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Lahore Qalandars","y":[12.5,13.285714285714286,1.0,20.5,22.125,10.571428571428571,1.0,34.6,1.0,18.571428571428573,16.571428571428573,11.333333333333334,20.5,11.5],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Peshawar Zalmi","y":[6.5,29.166666666666668,13.333333333333334,22.666666666666668,10.333333333333334,4.6,5.0,1.0,32.09090909090909,1.0,16.2,17.0,22.125,13.5,7.0,18.8,6.2],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Quetta Gladiators","y":[26.444444444444443,3.0,11.4,24.5,6.5,34.42857142857143,12.0,1.0,12.333333333333334,5.0,13.333333333333334,6.0,31.875,24.0,6.0,20.333333333333332,0.5,2.0,0.5],"type":"box"}],                        {"legend":{"title":{"text":"Teams"}},"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"title":{"text":"Batting Runs distribution for each team"},"xaxis":{"title":{"text":"Teams"}},"yaxis":{"title":{"text":"Average runs scored"}}},{"responsive": true})};
-                    </script></div>
-                </figure>
-
+                    <div class="bat-scatter">
+                        <p> In the plot below, as we scroll left to right the average runs increases, bottom to top strike rate increases. The darker circle color represents more consistency.
+                            The farther right and up and darker the better
+                            Hover over a point and you can view the player name and team name.
+                        </p>
+                        <figure class = "graph bat-scat-graph">
+                            <div>
+                                <div id="aee5290d-8303-4047-81d8-6ea8cb426fad" class="plotly-graph-div" style="height:100%; width:100%;">
+                                </div>
+                                <script type="text/javascript">
+                                    window.PLOTLYENV=window.PLOTLYENV || {}; if (document.getElementById("aee5290d-8303-4047-81d8-6ea8cb426fad")) {Plotly.newPlot("aee5290d-8303-4047-81d8-6ea8cb426fad",[{"hovertemplate":"color=Islamabad United<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Islamabad United","marker":{"color":"#636efa","symbol":"circle"},"mode":"markers","name":"Islamabad United","orientation":"v","showlegend":true,"x":[11.0,30.444444444444443,1.0,0.0,15.333333333333334,0.0,33.5,0.5,15.0,1.0,19.0,11.5,26.6,1.0,19.75,8.333333333333334,15.444444444444445],"xaxis":"x","y":[157.14285714285714,110.93117408906883,25.0,0.0,124.32432432432432,0.0,131.37254901960785,50.0,88.23529411764706,33.333333333333336,132.5581395348837,102.22222222222223,134.34343434343435,100.0,108.21917808219177,96.15384615384616,118.80341880341881],"yaxis":"y","type":"scatter"},{"hovertemplate":"color=Karachi Kings<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Karachi Kings","marker":{"color":"#EF553B","symbol":"circle"},"mode":"markers","name":"Karachi Kings","orientation":"v","showlegend":true,"x":[6.0,4.0,22.333333333333332,10.375,10.0,21.5,11.9,17.77777777777778,29.1,2.5,0.0,9.5,20.2],"xaxis":"x","y":[114.28571428571429,114.28571428571429,162.09677419354838,129.6875,125.0,114.36170212765957,94.44444444444444,108.84353741496598,109.81132075471699,125.0,0.0,111.76470588235294,120.23809523809524],"yaxis":"y","type":"scatter"},{"hovertemplate":"color=Lahore Qalandars<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Lahore Qalandars","marker":{"color":"#00cc96","symbol":"circle"},"mode":"markers","name":"Lahore Qalandars","orientation":"v","showlegend":true,"x":[18.571428571428573,1.0,16.571428571428573,11.333333333333334,11.5,12.5,22.125,13.285714285714286,1.0,34.6,20.5,20.5,1.0,10.571428571428571],"xaxis":"x","y":[120.37037037037037,66.66666666666667,170.58823529411765,103.03030303030303,100.0,96.15384615384616,136.15384615384616,116.25,28.571428571428573,149.13793103448276,146.42857142857142,124.24242424242425,100.0,92.5],"yaxis":"y","type":"scatter"},{"hovertemplate":"color=Peshawar Zalmi<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Peshawar Zalmi","marker":{"color":"#ab63fa","symbol":"circle"},"mode":"markers","name":"Peshawar Zalmi","orientation":"v","showlegend":true,"x":[6.2,13.5,6.5,29.166666666666668,13.333333333333334,22.666666666666668,1.0,32.09090909090909,10.333333333333334,4.6,17.0,5.0,22.125,18.8,16.2,7.0,1.0],"xaxis":"x","y":[79.48717948717949,110.20408163265306,86.66666666666667,129.62962962962962,127.65957446808511,101.49253731343283,16.666666666666668,128.83211678832117,67.3913043478261,153.33333333333334,96.83544303797468,57.69230769230769,163.88888888888889,106.81818181818181,120.8955223880597,92.10526315789474,50.0],"yaxis":"y","type":"scatter"},{"hovertemplate":"color=Quetta Gladiators<br>x=%{x}<br>y=%{y}<extra></extra>","legendgroup":"Quetta Gladiators","marker":{"color":"#FFA15A","symbol":"circle"},"mode":"markers","name":"Quetta Gladiators","orientation":"v","showlegend":true,"x":[2.0,0.5,1.0,6.0,24.0,31.875,6.0,13.333333333333334,5.0,12.333333333333334,12.0,34.42857142857143,6.5,24.5,11.4,3.0,26.444444444444443,20.333333333333332,0.5],"xaxis":"x","y":[66.66666666666667,50.0,14.285714285714286,105.88235294117646,126.3157894736842,121.42857142857143,66.66666666666667,111.11111111111111,105.26315789473684,137.03703703703704,171.42857142857142,148.76543209876544,96.29629629629629,106.52173913043478,129.54545454545453,33.333333333333336,127.95698924731182,128.8732394366197,33.333333333333336],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Average Batting Runs"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Strike Rate"}},"legend":{"title":{"text":"Teams"},"tracegroupgap":0},"margin":{"t":60},"shapes":[{"line":{"color":"red","width":1},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":100.78578820515864,"y1":100.78578820515864,"yref":"y"},{"line":{"color":"green","width":1},"type":"line","x0":12.966424062049061,"x1":12.966424062049061,"xref":"x","y0":0,"y1":1,"yref":"y domain"}],"title":{"text":"Batting runs vs Batting strike rate for each team"}},{"responsive": true})};
+                                </script>
+                            </div>
+                        </figure>
+                        <div class = "text graph-text bat-hist-text">
+                            <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. 
+                                Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. 
+                                Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bat-box">
+                        <p>Graph below</p>
+                        <figure>
+                            <div>                            
+                                <div id="fc1e022a-6b4a-4e37-b748-c74fc911ddd0" class="plotly-graph-div" style="height:100%; width:100%;">
+                                </div>            
+                                <script type="text/javascript">                                    
+                                    window.PLOTLYENV=window.PLOTLYENV || {}; if (document.getElementById("fc1e022a-6b4a-4e37-b748-c74fc911ddd0")) {Plotly.newPlot("fc1e022a-6b4a-4e37-b748-c74fc911ddd0",[{"boxmean":"sd","boxpoints":"all","name":"Islamabad United","y":[8.333333333333334,11.5,15.444444444444445,15.0,30.444444444444443,33.5,1.0,19.75,0.0,0.5,1.0,15.333333333333334,0.0,19.0,26.6,11.0,1.0],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Karachi Kings","y":[29.1,17.77777777777778,10.0,10.375,22.333333333333332,21.5,6.0,11.9,9.5,20.2,4.0,2.5,0.0],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Lahore Qalandars","y":[12.5,13.285714285714286,1.0,20.5,22.125,10.571428571428571,1.0,34.6,1.0,18.571428571428573,16.571428571428573,11.333333333333334,20.5,11.5],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Peshawar Zalmi","y":[6.5,29.166666666666668,13.333333333333334,22.666666666666668,10.333333333333334,4.6,5.0,1.0,32.09090909090909,1.0,16.2,17.0,22.125,13.5,7.0,18.8,6.2],"type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Quetta Gladiators","y":[26.444444444444443,3.0,11.4,24.5,6.5,34.42857142857143,12.0,1.0,12.333333333333334,5.0,13.333333333333334,6.0,31.875,24.0,6.0,20.333333333333332,0.5,2.0,0.5],"type":"box"}],                        {"legend":{"title":{"text":"Teams"}},"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"title":{"text":"Batting Runs distribution for each team"},"xaxis":{"title":{"text":"Teams"}},"yaxis":{"title":{"text":"Average runs scored"}}},{"responsive": true})};
+                                </script>
+                            </div>
+                        </figure>
+                        <div class = "text graph-text bat-hist-text">
+                            <p> From the plot, we can observe that Peshawar has a heavily positively skewewd distribtuions which is not ideal as it indicates there are more batsman with low average scores. 
+                                Lahore and Karachi also only have 4-5 batsman consistently scoring more than 15 runs. 
+                                Quetta and Islamabd appear to be the better teams with significant number of batsmans scoring above 20 runs. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section> 
-                <!-- Bowling analysis -->
+            <!-- Bowling analysis -->
             <section  class="bowling-performance" tabindex="2">
                 <div id class="bowling-container container">
-                    <h2>Bowling Performance</h2> 
-                    <p> A bowlers job is to stop batsman from scoring runs. They try to either get the batsman out or minimize the number of runs they concede. </p>
-                    <div class="bowling-scatter">
+                    <div class='bowl-intro'>
+                        <h2>Bowling Performance</h2> 
+                        <p> A bowlers job is to stop batsman from scoring runs. They try to either get the batsman out or minimize the number of runs they concede. </p>
+                    </div>
+                    <div class="bowl-scatter">
                         <p>  Similar to the batsman scatter chart, the bowler scatter chart compares the bowlers on 3 metrics: </p>
                         <ol>
                             <li>
@@ -136,7 +157,7 @@
                         </div>
                     </div>
                 <!-- Bowling histogram -->
-                    <div class="bowling-histogram">
+                    <div class="bowl-box">
                         <div class = "text">
                                 <p> Like, the batsman average runs distribution, I compared bowlers economy distribution for across teams.
                                 In T20, each bowler can bowl a maximum of 4 overs so each team needs atleast 5 bolwers. Often times teams employ more than 5 bowlers to rotate their bowling and rest players. Thus, a team with lots of bolwers with good ecnomy gives them plenty of options. 
@@ -159,12 +180,12 @@
                 </div>
             </section >          
          <!-- Ranking -->
-            <section class="ranking" tabindex = "3">
-                <div class="ranking-container container">
-                    <div class = "player-score text">
+            <section class="overall" tabindex = "3">
+                <div class="overall-container container">
+                    <div class = "overall-intro text">
                         <h2> Player Score</h2>
                         <p>   
-                        I ranked all players and assigned each a score based  on the following performance metrics. Each metric is scored on a scale of 0 to 3.
+                        I ranked all players and assigned each a score based on the following performance metrics. Each metric is scored on a scale of 0 to 3.
                         </p>
                         <ol>
                             <li><span class='colortext'><strong> Average runs scored</strong> </span> </li>
@@ -175,144 +196,10 @@
                             <li><span class='colortext'><strong>Variance of bowler runs conceded</strong> </span></li>
                         </ol>
                         <p>  The Player Score is calculated as the sum of all the metric scores. 
-                        Naturally, all-rounders, who can bat as well as bowl, contribute most to a team and thus rank higher.  </p>
-                        <p> The table below displays the top 10 most valuable players based on the Player Score</p>
+                            More explanation. Read more in methodology
                     </div>
-                    <!-- <div class = "player-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th> Player</th>
-                                <th> Team</th>
-                                <th> Average Runs Rank</th>
-                                <th> Strike Rate Rank</th>
-                                <th> Runs Variance Rank</th>
-                                <th> Average Wickets Rank</th>
-                                <th> Average Economy Rank</th>
-                                <th> Runs conceded Variance Rank</th>
-                                <th> Player Score</th>
-                            </tr>
-                        </thead>  
-                        <tbody>
-                            <tr>     
-                                <td> Fakhar Zaman</td>
-                                <td> Lahore Qalandars </td>
-                                <td> 3</td>
-                                <td> 3</td>
-                                <td> 2</td>
-                                <td> 2</td>
-                                <td> 3</td>
-                                <td> 3</td>
-                                <td> 16</td>
-                            </tr>    
-                            <tr>     
-                                <td> Mahmudullah </td>
-                                <td> Quetta Gladiators </td>
-                                <td> 2</td>
-                                <td> 3</td>
-                                <td> 2</td>
-                                <td> 3</td>
-                                <td> 1</td>
-                                <td> 3</td>
-                                <td> 14</td>
-                            </tr>    <tr>     
-                                <td> SP Narine</td>
-                                <td> Lahore Qalandars </td>
-                                <td> 3</td>
-                                <td> 3</td>
-                                <td> 2</td>
-                                <td> 3</td>
-                                <td> 3</td>
-                                <td> 1</td>
-                                <td> 13</td>
-                            </tr>    
-                            <tr>     
-                                <td> SR Watson</td>
-                                <td> Islamabad United </td>
-                                <td> 3</td>
-                                <td> 3</td>
-                                <td> 2</td>
-                                <td> 3</td>
-                                <td> 1</td>
-                                <td> 1</td>
-                                <td> 13</td>
-                            </tr>    
-                            <tr>     
-                                <td> Imad Wasim</td>
-                                <td> Karachi Kings </td>
-                                <td> 2</td>
-                                <td> 3</td>
-                                <td> 0</td>
-                                <td> 3</td>
-                                <td> 1</td>
-                                <td> 3</td>
-                                <td> 12</td>
-                            </tr>    
-                            <tr>     
-                                <td> Mohammad Hafeez</td>
-                                <td> Peshawar Zalmi </td>
-                                <td> 3</td>
-                                <td> 2</td>
-                                <td> 1</td>
-                                <td> 3</td>
-                                <td> 1</td>
-                                <td> 2</td>
-                                <td> 12</td>
-                            </tr>    
-                            <tr>     
-                                <td> Shakib Al Hasan</td>
-                                <td> Peshawar Zalmi </td>
-                                <td> 2</td>
-                                <td> 2</td>
-                                <td> 2</td>
-                                <td> 3</td>
-                                <td> 1</td>
-                                <td> 2</td>
-                                <td> 12</td>
-                            </tr>    
-                            <tr>     
-                                <td> NLTC Perera</td>
-                                <td> Quetta Gladiators </td>
-                                <td> 2</td>
-                                <td> 2</td>
-                                <td> 2</td>
-                                <td> 3</td>
-                                <td> 1</td>
-                                <td> 1</td>
-                                <td> 11</td>
-                            </tr>    
-                            <tr>     
-                                <td> Shoaib Malik</td>
-                                <td> Karachi Kings </td>
-                                <td> 3</td>
-                                <td> 2</td>
-                                <td> 2</td>
-                                <td> 2</td>
-                                <td> 1</td>
-                                <td> 1</td>
-                                <td> 11</td>
-                            </tr>    
-                            <tr>     
-                                <td> Shahid Afridi</td>
-                                <td> Peshawar Zalmi </td>
-                                <td> 3</td>
-                                <td> 3</td>
-                                <td> 2</td>
-                                <td> 1</td>
-                                <td> 1</td>
-                                <td> 1</td>
-                                <td> 11</td>
-                            </tr>    
-    
-                        </tbody>
-                    </table>
-                    <div class="graph-text table-text text">
-                        Top Players
-                    </div>
-    
-                    </div> -->
                     <!-- Box plot for scores -->
-                    <div class = "player-boxplot text">
+                    <div class = "player-histogram text">
                         <p>
                         To further comapre the distribution of player scores among teams, I plotted the box plots below.
                         </p>
@@ -323,18 +210,16 @@
                                 </script>
                             </div>
                         </figure>
-                        <div class = "box-plot-text graph-text text">
+                        <div class = "box-histogram-text graph-text text">
                             <p> Box plot paints an interesting picture. Notice that Lahore has a highest median score and infact has the best player and 11 players with score greater than 7. But the team only has 14 players. While Quetta has 19 players and 13 players with score greater than 7 and Peshawar 11</p>
-                            <br>
                             <p>
                             Overall, Peshawar and Quetta seem to have the most balanced teams, both of whom were the tournament finalist. 
                             Peshawar has good bowlers while Quetta has good batsman. 
-                            <br>
                             Lahore Qalandars and Karachi Kings need to buy more players to match the other teams, specifically batsman.
                             </p>
                         </div>
                     </div>
-                    <div class = "player-heatmap text">
+                    <div class = "player-heatmap">
                         <p>
                         To further comapre the distribution of player scores among teams, I plotted the box plots below.
                         </p>
@@ -346,7 +231,7 @@
                                 </script>        
                             </div>
                         </figure>
-                        <div class = "heatmap-text graph-text text">
+                        <div class = "heatmap-text graph-text">
                             <p> Box plot paints an interesting picture. Notice that Lahore has a highest median score and infact has the best player and 11 players with score greater than 7. But the team only has 14 players. While Quetta has 19 players and 13 players with score greater than 7 and Peshawar 11</p>
                             <br>
                             <p>
@@ -365,6 +250,7 @@
             <h2> Data and Methodology </h2>
                 <p> I was inspired by <a href = "https://www.kaggle.com/ash316/let-s-play-cricket"> this Kaggle project </a> which is a similar analysis but with Indian Premier League data. 
                     I used <a href= "https://cricsheet.org/" > ball-ball data </a> for 24 matches (48 innings) where each data point includes delivery number, bowler and batsman name and the outcome of the delivery. 
+                    Player score methodology
                 </p>
             </div>
         </footer>
