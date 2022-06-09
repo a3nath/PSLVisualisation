@@ -15,27 +15,27 @@
     </head>
     <body>
         <main>           
-            <header class="header" id="home">
+            <section class="header">
                 <div class="container header-container">
-                    <h1> Pakistan Super League 2017 </h1>
+                    <h1> PSL 2K17 </h1>
                     <h3> A cricket tournament visualisation </h3>
                 </div>
                 <!-- <img class = "cricgif" src="img/cricgif.gif" alt= "cricket gif" align="middle">  -->    
-            </header>
+            </section>
             <section class='intro-text' tabindex="0">
                 <div class="intro-container container">
                     <div class='cricket-text'>
                         <p> 
                             <a href='https://en.wikipedia.org/wiki/Pakistan_Super_League' blank='_'>Pakistan Super League (PSL) </a> 
                             is a <a href='https://en.wikipedia.org/wiki/Cricket'>cricket </a>
-                            league played mostly in Pakistan.
+                            league played in Pakistan.
                         </p>
                         <p> Cricket is a sport played between two teams in which each team gets 20 overs (120  balls) to score as many runs as possible. The team which scores the most at the end of 20 overs wins.
                         </p>
                         <p>
                             The game is divided into two kinds of players - batsman (person batting who hits the ball) and bowler (the person bowling who bowls the ball).
-                            A batsman's objective is to score as many runs as possbile by hiiting the ball as far as possible. The further he hits the ball the more runs he scores. 
-                            The bowler has an inverse objective - to stop the batsman from scoring runs by bowling such that either the batsman can't hit far enough or gets out (batsman's wicket).
+                            A batsman's objective is to score as many runs as possbile by hiting the ball as far as possible. The further he hits the ball the more runs he scores. 
+                            The bowler has an inverse objective - to stop the batsman from scoring runs by bowling such that either the batsman can't hit the ball or gets out (batsman's wicket).
                         </p> 
                     </div>
                     <div class="team-text">
@@ -71,9 +71,9 @@
                         <h2> Batting Performance </h2>
                         <p> I analyzed individual batting peformances of each batsman based on the follwing criteria: </p>
                         <ol>
-                            <li><span class = 'colortext'><strong>Average runs:</strong></span> Average runs scored in each game - Higher the better</li>
-                            <li><span class='colortext'><strong>Strike rate:</strong></span> Runs scored per 100 balls (How fast a batsman scores) - Higher the better</li>
-                            <!-- <li><span class='colortext'><strong> Score variance:</strong></span> Batsman's scoring consistency </li> -->
+                            <li><span class = 'colortext'>Average runs:</span> Average runs scored in each game - Higher the better</li>
+                            <li><span class='colortext'>Strike rate:</span> Runs scored per 100 balls (How fast a batsman scores) - Higher the better</li>
+                            <!-- <li><span class='colortext'> Score variance:</span> Batsman's scoring consistency </li> -->
                         </ol>
                     </div>
                     <div class="bat-scat-box graph-box">
@@ -122,15 +122,15 @@
                         <p> A bowlers job is to stop batsman from scoring runs. They try to either get the batsman out or minimize the number of runs they concede. </p>
                         <ol>
                             <li>
-                                <span class='colortext'><strong> Economy:</strong>
+                                <span class='colortext'> Economy:
                                     </span> Average runs conceded in an over
                                 </li>
                             <li>
-                                <span class='colortext'><strong>Total Wickets</strong>
+                                <span class='colortext'>Total Wickets
                                 </span> Total wickets taken
                                 </li>
                             <li>
-                                <span class='colortext'><strong>Bowler Variance:</strong>
+                                <span class='colortext'>Bowler Variance:
                                     </span> Consistency in number of runs given 
                                 </li>
                         </ol>
@@ -181,12 +181,12 @@
                         I ranked all players and assigned each a score based on the following performance metrics. Each metric is scored on a scale of 0 to 3.
                         </p>
                         <ol>
-                            <li><span class='colortext'><strong> Average runs scored</strong> </span> </li>
-                            <li><span class='colortext'><strong>Strike rate</strong></span></li>
-                            <li><span class='colortext'> <strong>Variance of batsman runs scored </strong></span></li>
-                            <li><span class='colortext'><strong> Average number of wickets taken</strong></span></li>
-                            <li><span class='colortext'><strong>Bowling Economy</strong></span></li>
-                            <li><span class='colortext'><strong>Variance of bowler runs conceded</strong> </span></li>
+                            <li><span class='colortext'> Average runs scored:explain </span> </li>
+                            <li><span class='colortext'>Strike rate</span></li>
+                            <li><span class='colortext'> Variance of batsman runs scored </span></li>
+                            <li><span class='colortext'> Average number of wickets taken</span></li>
+                            <li><span class='colortext'>Bowling Economy</span></li>
+                            <li><span class='colortext'>Variance of bowler runs conceded </span></li>
                         </ol>
                         <p> The Player Score is calculated as the sum of all the metric scores. 
                             More explanation. Read more in methodology

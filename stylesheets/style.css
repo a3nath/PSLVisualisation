@@ -2,7 +2,8 @@
 :root{
     --primary-bgcolor:#fff;
     --secondary-bgcolor: #ffead6;
-    --main-fontcolor: #232323;
+    --primary-fontcolor: #2b2f31;
+    --secondary-fontcolor: #2B416C;
     --font-family: "merriweather",serif
 }
 
@@ -12,9 +13,22 @@ html{
     box-sizing: border-box;
 }
 
-h1 {text-align: center;
-    font-size: 4rem;
-    color: #2b2f31;
+
+body{
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    font-size: 2rem;
+    background-color: var(--primary-bgcolor);
+    color: var(--primary-fontcolor);
+    line-height: 1.5;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 9rem;
+    color: var(--secondary-fontcolor);
     font-weight: bold;
     line-height: 1.4;
 }
@@ -28,7 +42,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: #2B416C;
+    color: var(--secondary-fontcolor);
 }
 
 a:hover{
@@ -36,27 +50,23 @@ a:hover{
 }
 
 h2 {
-    font-size: 28px;
-    color: #2B416C;
+    font-size: 3rem;
+    color: var(--secondary-fontcolor);
 }
 
-h3 {text-align: center;
-    color: #2B416C;
+h3 {
+    text-align: center;
+    color: var(--secondary-fontcolor);
+    margin-top: 0;
+    font-size: 2rem;
 }
-
-p {
-    font-size: calc(1rem + 0.65vw);
-}
-
-/* .cricgif {
-    display: block;
-    width: 60%;
-    margin-top: 20px;
-    margin-left: 20%;
-} */
 
 .header{
-    padding: 80px 0;
+    padding: 120px 0 80px 0;
+}
+
+.container{
+    padding: 0 40px;
 }
 
 .logo-row {
@@ -67,16 +77,6 @@ p {
 
 figcaption {
     text-align: center;
-}
-
-body{
-    display: block;
-    font-family: var(--font-family);
-    box-sizing: border-box;
-    font-weight: 300;
-    font-size: calc(1rem + 0.65vw);
-    background-color: var(--primary-bgcolor);
-
 }
 
 section{
@@ -129,7 +129,7 @@ section{
 
 
 .colortext{
-    color: #2B416C;
+    font-weight: bold;
 }
 
 /* .hist2{
