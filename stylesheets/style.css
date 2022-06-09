@@ -132,6 +132,9 @@ section{
     color: #2B416C;
 }
 
+/* .hist2{
+    display: none;
+} */
 
 /** media queries**/
 
@@ -158,5 +161,14 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    }
+    .hist1{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 841px){
+    .hist2{
+        display: none;
     }
 }
