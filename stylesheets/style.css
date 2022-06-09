@@ -28,7 +28,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: inherit;
+    color: #2B416C;
 }
 
 a:hover{
@@ -48,17 +48,15 @@ p {
     font-size: calc(1rem + 0.65vw);
 }
 
-.cricgif {
+/* .cricgif {
     display: block;
     width: 60%;
     margin-top: 20px;
     margin-left: 20%;
-}
+} */
 
-
-.Home {
-    display: block;
-    box-sizing: border-box;
+.header{
+    padding: 80px 0;
 }
 
 .logo-row {
@@ -76,6 +74,7 @@ body{
     font-family: var(--font-family);
     box-sizing: border-box;
     font-weight: 300;
+    font-size: calc(1rem + 0.65vw);
     background-color: var(--primary-bgcolor);
 
 }
@@ -104,19 +103,13 @@ section{
 }
 
 .overall{
-    background-color:var(--secondary-bgcolor);
-    margin-left: -250px;
-    margin-right:-250px;
-    padding-left:250px;
-    padding-right: 250px;
-    margin-bottom: -25px;
-    margin-top: -25px;
-    
+    background-color:var(--secondary-bgcolor);   
 }
 
 .footer {
     background-color: var(--primary-bgcolor); 
     border-top: dashed 1px black;   
+    padding: 40px 0;
 }
 
 
@@ -124,6 +117,10 @@ section{
     background:#663399}
 ::selection{
     color: white;
+}
+
+.graph-box{
+    padding: 20px 0;
 }
 
 .graph {
