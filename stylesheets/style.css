@@ -162,13 +162,13 @@ section{
     justify-content: center;
     align-items: center;
     }
-    .hist1{
+    .batbox-1, .bowlbox-1, .hist1{
         display: none;
     }
 }
 
 @media screen and (min-width: 841px){
-    .hist2{
+    .batbox-2, .bowlbox-2, .hist2{
         display: none;
     }
 }
