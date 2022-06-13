@@ -19,8 +19,8 @@ body{
     box-sizing: border-box;
     font-size: 2.2rem;
     background-color: var(--primary-bgcolor);
-    color: var(--primary-fontcolor);
-    line-height: 1.5;
+    color: var( --primary-fontcolor);
+    line-height: 1.5; 
 
 }
 
@@ -48,7 +48,7 @@ h1 {
 
 
 h2 {
-    font-size: 3rem;
+    font-size: 3.6rem;
     color: var(--secondary-fontcolor);
 
 }
@@ -61,8 +61,7 @@ h3 {
 
 .header{
     padding: 140px 0; 
-    background-color: var(--secondary-fontcolor);
-    color: var(--secondary-bgcolor)
+    color: var(--secondary-fontcolor)
   
 }
 
@@ -81,8 +80,12 @@ figcaption {
 }
 
 section{
-    padding: 40px 0;
+    padding-bottom: 40px;
     margin:0
+}
+
+.section-head{
+    margin-bottom: 20px;
 }
 
 .team-logo-container{
@@ -93,14 +96,11 @@ section{
 }
 
 .batting-performance {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
     background-color: var(--secondary-bgcolor);;
 }
 
 .bowling-performance{
-    padding-top: 30px;
-    padding-bottom: 30px;
     background-color: var(--secondary-bgcolor);   
 }
 
