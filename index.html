@@ -24,43 +24,38 @@
             </section>
             <section class='intro-text' tabindex="0">
                 <div class="intro-container container">
-                    <div class='cricket-text'>
-                        <p> 
-                            <a href='https://en.wikipedia.org/wiki/Pakistan_Super_League' blank='_'>Pakistan Super League (PSL) </a> 
-                            is a <a href='https://en.wikipedia.org/wiki/Cricket'>cricket </a>
-                            league played in Pakistan.
-                        </p>
-                        <p> Cricket is a sport played between two teams in which each team gets 120 balls (20 overs) to score as many runs as possible. The team which scores the most at the end of 20 overs wins.
-                        </p>
-                        <p>
-                            Each team takes turns batting and bowling. Each team has 11 players who serve either as a batsman specialist (person batting who hits the ball) or a bowler (person bowling who bowls the ball).
-                        </p> 
-                    </div>
-                    <div class="team-text">
-                        <p> The 2017 edition of PSL was played amongst 5 teams
-                        </p>
-                        <!-- Team logos -->
-                        <ul class = 'team-logo-container' tabindex="1">
-                            <li class='team-logo'>
-                                <a href = "https://www.peshawarzalmi.com" target=  "_blank"> <img src = "img/Peshawar_Zalmi_logo.svg" width = "150", height = "150" alt = "Peshawar Zalmi logo"><figcaption>Peshawar Zalmi</figcaption> </a>
-                            </li>
-                            <li class='team-logo'>
-                                <a href = "https://www.quettagladiators.com"  target="_blank"><img src = "img/Quetta_Gladiators_logo.svg" width = "150", height = "150" alt = "Quetta Gladiators logo"> <figcaption>Quetta Gladiators</figcaption> </a> 
-                            </li>
-                            <li class='team-logo'>
-                                <a href = "https://www.islamabadunited.com" target="_blank"><img src = "img/Islamabad_United_logo.svg" width = "150", height = "150" alt = "Islamabad United logo"> <figcaption>Islamabad United</figcaption></a>
-                            </li>
-                            <li class='team-logo'>
-                                <a href = "https://www.lahoreqalandars.com/" target="_blank"> <img src = "img/Lahore_Qalandars_logo.svg" width = "150", height = "150" alt = "Lahore Qalandars logo"> <figcaption>Lahore Qalandars</figcaption> </a>
-                            </li>
-                            <li class='team-logo'>
-                                <a href = "https://karachikings.com.pk/" target="_blank"> <img src = "img/Karachi_Kings_logo.svg" width = "150", height = "150" alt = "Karachi Kings logo"><figcaption> Karachi Kings</figcaption></a> 
-                            </li>
-                        </ul>
-                    </div>
+                    <p> 
+                        <a href='https://en.wikipedia.org/wiki/Pakistan_Super_League' blank='_'>Pakistan Super League (PSL) </a> 
+                        is a <a href='https://en.wikipedia.org/wiki/Cricket'>cricket </a>
+                        league played in Pakistan. Cricket is a sport played between two teams in which each team gets 120 balls (20 overs) to score as many runs as possible. The team which scores the most at the end of 20 overs wins.
+
+                    </p>
+                    <p>
+                        Each team takes turns batting and bowling. Teams have 11 players who serve either as a batsman specialist (person who bats) or a bowler (person who bowls the ball).
+                    </p> 
+                    <p>
+                        I wanted to anaylze the performance of each of the teams in the Pakistan Super league played in 2017. Five teams competed in the 2017 edition: 
+                    </p>
+                    <!-- Team logos -->
+                    <ul class = 'team-logo-container' tabindex="1">
+                        <li class='team-logo'>
+                            <a href = "https://www.peshawarzalmi.com" target=  "_blank"> <img src = "img/Peshawar_Zalmi_logo.svg" width = "150", height = "150" alt = "Peshawar Zalmi logo"><figcaption>Peshawar Zalmi</figcaption> </a>
+                        </li>
+                        <li class='team-logo'>
+                            <a href = "https://www.quettagladiators.com"  target="_blank"><img src = "img/Quetta_Gladiators_logo.svg" width = "150", height = "150" alt = "Quetta Gladiators logo"> <figcaption>Quetta Gladiators</figcaption> </a> 
+                        </li>
+                        <li class='team-logo'>
+                            <a href = "https://www.islamabadunited.com" target="_blank"><img src = "img/Islamabad_United_logo.svg" width = "150", height = "150" alt = "Islamabad United logo"> <figcaption>Islamabad United</figcaption></a>
+                        </li>
+                        <li class='team-logo'>
+                            <a href = "https://www.lahoreqalandars.com/" target="_blank"> <img src = "img/Lahore_Qalandars_logo.svg" width = "150", height = "150" alt = "Lahore Qalandars logo"> <figcaption>Lahore Qalandars</figcaption> </a>
+                        </li>
+                        <li class='team-logo'>
+                            <a href = "https://karachikings.com.pk/" target="_blank"> <img src = "img/Karachi_Kings_logo.svg" width = "150", height = "150" alt = "Karachi Kings logo"><figcaption> Karachi Kings</figcaption></a> 
+                        </li>
+                    </ul>
                     <p class='analysis-intro'>
-                        My objective was to see which team had the better players overall. 
-                        I have split the analysis between batsman performance, bowler performance and finally every players aggregated individual performance to come to an overall conclusion
+                        I broke down the analysis by batting performance, bowler performance and finally the overall team performance.
                     </p>
                 </div>
             </section>
@@ -73,7 +68,6 @@
                         <ol>
                             <li><span class = 'colortext'>Average runs:</span> Average runs scored in each game - Higher the better</li>
                             <li><span class='colortext'>Strike rate:</span> Runs scored per 100 balls (How fast a batsman scores) - Higher the better</li>
-                            <!-- <li><span class='colortext'> Score variance:</span> Batsman's scoring consistency </li> -->
                         </ol>
                     </div>
                     <div class="bat-scat-box graph-box">
@@ -216,8 +210,8 @@
                     </div>
                     <div class = "overall-heatmap graph-box">
                         <p>
-                        Finally, let's view the heatmap to see a side by side comparision of the score distribution. 
-                        The lighter a color the higher a players score.
+                            Finally, let's view the heatmap to see a side by side comparision of the score distribution. 
+                            The lighter a color the higher a players score.
                         </p>
                         <figure class = "graph graph-heatmap">
                             <div>                            
@@ -228,10 +222,10 @@
                             </div>
                         </figure>
                         <p class = "heatmap-text graph-text"> 
-                        Right of the bat, we see the Lahore and Peshawar have a bright yellow, 2 players with the highest score.
-                        We also notice that Karachi has only 13 players and Quetta has the most with 18.
-                        Similar to the histogram, Islamabad has a long shade of purple least scoring players.
-                        Peshawar is once more a solid team. it has alittle bit of purple plsyers and the most most in the lighter shade.
+                            Right of the bat, we see the Lahore and Peshawar have a bright yellow, 2 players with the highest score.
+                            We also notice that Karachi has only 13 players and Quetta has the most with 18.
+                            Similar to the histogram, Islamabad has a long shade of purple least scoring players.
+                            Peshawar is once more a solid team. it has alittle bit of purple plsyers and the most most in the lighter shade.
                         </p>
                     </div>
                 </div>
