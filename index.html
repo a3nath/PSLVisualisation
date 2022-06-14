@@ -72,8 +72,8 @@
                     </div>
                     <div class="bat-scat-box graph-box">
                         <p> The plot below, compares runs scored vs the strike rate for each batsman for each team.
-                            As we scroll left to right the runs increases and bottom to top strike rate increases. 
-                            The farther right and up the better.
+                            As we scroll left to right, the runs increases and bottom to top strike rate increases. 
+                            The farther right and up the better - top right quadrant.
                             Hover on the chart to see the values and respective teams.
                         </p>
                         <figure class = "graph graph-bat-scat">
@@ -87,13 +87,14 @@
                         </figure>
                         <p class ="graph-text bat-scat-text">                         ]
                             I divided the graphs into quadrants.
-                            The top right quadrant has batsman wigh grater than average runs and stike rate.
-                            Zooming in to the top right quadrant, all teams have about roughtly about 7 players the same number of players. Peshawar has the most with 8 and karachi worst with 5
-   
+                            The top right quadrant has batsman wigh greater than average runs and stike rate.
+                            Zooming in to the quadrant, we notice that all teams have roughly about 7 players that perform better than the average batsman. Peshawar has the most with 8 and karachi the worst with only 5 players.
                         </p>
                     </div>
                     <div class="bat-box-box  graph-box">
-                        <p>Lets now compare the distribution of average batsman runs across teams. The box plot plots the 3 quartiles of the distribution of the runs scored as well as the the mean and median</p>
+                        <p> Next, let's compare the distribution of average batsman runs scored across teams. Meaning how are the batsman scoring within each team. The greater number of batsman with higher scores the better.
+                            The box plot shows the distribtuion of the the 3 quartiles as well as the mean and median of runs scored.
+                        </p>
                         <figure class='graph graph-bat-box'>
                             <div class='batbox-1'>                            
                                 <div id="fc1e022a-6b4a-4e37-b748-c74fc911ddd0" class="plotly-graph-div" style="height:100%; width:100%;">
@@ -107,11 +108,9 @@
                             </div>
                         </figure>
                         <p class = "graph-text bat-box-text"> 
-                            Peshawar has the highest mean and median score meaning its players on average score 13.33 runs in a match while Karachi has the lowest with the median runs of 10.3 runs.
-                            Islamabad comes the closest with 8 players scoring above 13 runs.
-                            Quetta and Islamabad have the greatest interquartile range meaing  WHATAAA                 
+                            Quetta has a huge spread meaning a very wide dispersion of runs scored. Lahore on the other hand has a much smaller dispersion in the middle so players are scoring relatively similarly.              
+                            Overall, Peshawar has the highest mean and median with 9 players scoring more than 13 runs while Karachi has the lowest with the median runs of only 10 runs.
                         </p>
-                        <p>Overall, Karachi sucks</p>
                     </div>
                 </div>
             </section> 
@@ -121,8 +120,7 @@
                     <div class='bowl-intro'>
                         <h2 class='section-head'>Bowling Performance</h2> 
                         <p> A bowlers job is to stop batsman from scoring runs. They try to bowl such that either the batsman can't hit the ball or get's out trying to hit it (batsman's wicket).
-
-                            They try to either get the batsman out or minimize the number of runs they concede. </p>
+                        </p>
                         <ol>
                             <li>
                                 <span class='colortext'> Economy:</span> 
@@ -153,8 +151,8 @@
                     </div>
                 <!-- Bowling histogram -->
                     <div class="bowl-box graph-box">
-                        <p> Like, the batsman average runs distribution, I compared bowlers economy distribution across the teams.
-                        In T20, each bowler can bowl a maximum of 4 overs so each team needs atleast 5 bolwers. Often times teams employ more than 5 bowlers to rotate their bowling and rest players. Thus, a team with lots of bolwers with good economy gives them plenty of options. 
+                        <p> Like, the batsman runs distribution, I compared bowlers economy distribution across the teams.
+                        In T20, a bowler can bowl a maximum of 4 overs (24 balls) so each team needs atleast 5 bolwers to finish the 120 balls. Often times teams employ more than 5 bowlers to rotate their bowling and rest players. Thus, a team with lots of bolwers with low economy gives them plenty of options. 
                         </p>
                         <figure class="graph graph-bowl-box">
                             <div class='bowlbox-1'>
@@ -166,8 +164,8 @@
                                 <div id="d054ad49-07c0-45dc-875d-af8b9d46aac1" class="plotly-graph-div" style="height:1000px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("d054ad49-07c0-45dc-875d-af8b9d46aac1")) {                    Plotly.newPlot(                        "d054ad49-07c0-45dc-875d-af8b9d46aac1",                        [{"boxmean":"sd","boxpoints":"all","name":"Islamabad United","xaxis":"x","y":[7.533333333333333,6.757575757575758,5.857142857142858,9.130434782608697,9.666666666666668,6.923076923076923],"yaxis":"y","type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Karachi Kings","xaxis":"x2","y":[6.689655172413794,7.648648648648649,10.11111111111111,7.454545454545455,7.65625,8.214285714285715,7.653846153846154],"yaxis":"y2","type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Lahore Qalandars","xaxis":"x3","y":[7.166666666666666,6.625,9.583333333333334,9.4,6.5,8.666666666666666,6.25],"yaxis":"y3","type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Peshawar Zalmi","xaxis":"x4","y":[6.8,10.5,6.972972972972973,12.625,8.764705882352942,6.6000000000000005,7.0,6.583333333333333,6.363636363636363],"yaxis":"y4","type":"box"},{"boxmean":"sd","boxpoints":"all","name":"Quetta Gladiators","xaxis":"x5","y":[9.4,7.03030303030303,7.466666666666667,8.090909090909092,8.722222222222221,7.35,6.625],"yaxis":"y5","type":"box"}],                        {"height":1000,"legend":{"title":{"text":"Teams"}},"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"title":{"text":"Bowler Economy distribution for each team"},"xaxis":{"anchor":"y","domain":[0.0,1.0]},"yaxis":{"anchor":"x","domain":[0.8639999999999999,0.9999999999999999],"title":{"text":"Economy"}},"xaxis2":{"anchor":"y2","domain":[0.0,1.0]},"yaxis2":{"anchor":"x2","domain":[0.6479999999999999,0.7839999999999999],"title":{"text":"Economy"}},"xaxis3":{"anchor":"y3","domain":[0.0,1.0]},"yaxis3":{"anchor":"x3","domain":[0.43199999999999994,0.568],"title":{"text":"Economy"}},"xaxis4":{"anchor":"y4","domain":[0.0,1.0]},"yaxis4":{"anchor":"x4","domain":[0.21599999999999997,0.352],"title":{"text":"Economy"}},"xaxis5":{"anchor":"y5","domain":[0.0,1.0]},"yaxis5":{"anchor":"x5","domain":[0.0,0.13599999999999998],"title":{"text":"Economy"}}},                        {"responsive": true}                    )                };                            </script>                            </div>
                         </figure>
                         <p class="graph-text bowl-box-text"> 
-                        Peshawar is a clear standout as it has the lowest median with 6 bowlers who concede less than 7 runs on average in an over.
-                        On the other hand, Quetta and Karachi only have 1 bolwer with an average less than 7. 
+                        We see that Karachi and Quetta has the smallest dispersion but the bowlers are expensive as they concede on average 7.6 and 7.4 runs respectively per over.
+                        Peshawar on the other hand is a clear standout as it has the lowest median and 6 bowlers who concede less than 7 runs in an over. The closest teams, Islamabad and Lahore, have only 3.
                         </p>
                     </div>
                 </div>
@@ -178,14 +176,14 @@
                     <div class="overall-intro">
                         <h2 class='section-head'>Overall</h2>
                         <p>   
-                        Let's give all the players a cumulative score based on their batting and bowling performance. We can assign a score from 0 - 3 on each of the following categories and sum them to land a final score for each player</p>
+                        Let's combine everything together to give all the players a cumulative score based on their batting and bowling performance. We can assign a score from 0 - 3 on each of the following categories and sum them to land a final score for each player</p>
                         <ol>
-                            <li><span class='colortext'>Average runs scored: Average runs a players score in a game </span> </li>
-                            <li><span class='colortext'>Strike rate: How many runs a person score per 100 balls faced. How fast a person scores</span></li>
-                            <li><span class='colortext'>Variance of batsman runs scored: Measures how consistently a batmsan scores </span></li>
-                            <li><span class='colortext'>Average Bowling Economy: Average runs a bowler conceded in a match </span></li>
-                            <li><span class='colortext'>Number of wickets taken: Total number of wickets taken by a bowler</span></li>
-                            <li><span class='colortext'>Variance of bowler ecnonomy: Measures the consistency of a bowler's economy </span></li>
+                            <li><span class='colortext'>Average runs scored:</span>  Average runs a players score in a game</li>
+                            <li><span class='colortext'>Strike rate:</span> How many runs a person score per 100 balls faced</li>
+                            <li><span class='colortext'>Variance of batsman runs scored:</span>  Measures how consistently a batmsan scores</li>
+                            <li><span class='colortext'>Average Bowling Economy:</span>  Average runs a bowler conceded in a match</li>
+                            <li><span class='colortext'>Number of wickets taken:</span>  Total number of wickets taken by a bowler</li>
+                            <li><span class='colortext'>Variance of bowler ecnonomy: </span>  Measures the consistency of a bowler's economy</li>
                         </ol>
                     </div>
                     <!-- Box plot for scores -->
@@ -204,8 +202,9 @@
                             </div>
                         </figure>
                         <p class = "histogram-text graph-text"> 
-                            Histogram paints an interesting picture. Most teams have a positive skew meaning more low scoring players with Islamabad with the highest skew.
-                            Peshawar has the fatest right tail meaning more high scoring players than others.
+                            Histogram paints an interesting picture. Most teams have a positive skew and fat left tails meaning more low scoring players.
+                            Islamabad has the fatest left tail while Peshawar has long right tail. Karachi has a balanced, symmetrical distribution with most players in the middle range.
+                            
                         </p>
                     </div>
                     <div class = "overall-heatmap graph-box">
@@ -222,10 +221,11 @@
                             </div>
                         </figure>
                         <p class = "heatmap-text graph-text"> 
-                            Right of the bat, we see the Lahore and Peshawar have a bright yellow, 2 players with the highest score.
-                            We also notice that Karachi has only 13 players and Quetta has the most with 18.
-                            Similar to the histogram, Islamabad has a long shade of purple least scoring players.
-                            Peshawar is once more a solid team. it has alittle bit of purple plsyers and the most most in the lighter shade.
+                            Similar to the histogram, we notice that Karachi has the lowest number of low scoring players and Islamabad the highest with a ling shade of purple.
+                            Karachi has a small team though with only 13 players compared to Islamabad which has 17.
+                            Peshawar is once more a solid team. It has some purple players but it the highest number of players with a score greater than 10.
+                            Not suprisingly, Peshawar won the championship that year!
+
                         </p>
                     </div>
                 </div>
@@ -236,7 +236,8 @@
             <h2 class='section-head'> Data and Methodology </h2>
                 <p> I was inspired by <a href = "https://www.kaggle.com/ash316/let-s-play-cricket"> this Kaggle project </a> which is a similar analysis but with Indian Premier League data. 
                     I used <a href= "https://cricsheet.org/" > ball-ball data </a> for 24 matches (48 innings) where each data point includes delivery number, bowler and batsman name and the outcome of the delivery. 
-                    Player score methodology
+                    For player score calculation, I used averages to assign players a score in the range of (0 - 3). If a player performed in the upper qauntile, I assigned a score of 3, lower 1 and in the middle 2. 
+                    I assigned a score of 0 for players who weren't a batsman specialist in the batting metrics (Avergae runs, strike rate, batting variance) and 0 to players who weren't a bowler specialist in the bowling categories (economy, strike rate, bowling variance).                    
                 </p>
             </div>
         </footer>
